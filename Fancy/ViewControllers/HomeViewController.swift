@@ -47,9 +47,11 @@ class HomeViewController: UIViewController {
     
     let searchTextField: UITextField = {
         let textField = UITextField()
-        let attText = NSAttributedString(string: "Search for Drinks, Sweets or more", attributes: [NSAttributedString.Key.font :  UIFont(name: Constants.futuraPrimary , size: 15)!])
-        textField.attributedPlaceholder = attText
-        
+        let attTextForPlaceholder = NSAttributedString(string: "Search for Drinks, Sweets or more", attributes: [NSAttributedString.Key.font :  UIFont(name: Constants.futuraPrimary , size: 15)!])
+        textField.attributedPlaceholder = attTextForPlaceholder
+        let attTextForText = NSAttributedString(string: "", attributes: [NSAttributedString.Key.font :  UIFont(name: Constants.futuraPrimary , size: 15)!])
+        textField.attributedText = attTextForText
+
         return textField
         
     }()
@@ -204,6 +206,10 @@ class CardViewController: LBTAListController<ItemCell, Item>, UICollectionViewDe
         return 20
     }
     
+    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+        goTo(vc: ItemsViewController())
+    }
     
     
     
@@ -232,4 +238,5 @@ struct MainPreview4: PreviewProvider {
             
         }
     }
+
 }

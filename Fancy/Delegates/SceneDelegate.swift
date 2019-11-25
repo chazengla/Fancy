@@ -21,7 +21,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         window = UIWindow(frame: windowScene.coordinateSpace.bounds)
         window?.windowScene = windowScene
-        let nc = UINavigationController(rootViewController: FiltersViewController())
+        let nc = UINavigationController(rootViewController: ItemsViewController())
 //        nc.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.black, NSAttributedString.Key.font: UIFont(name: Constants.futuraBold, size: 20)!]
 //        nc.navigationBar.tintColor = UIColor.black
 //        nc.navigationBar.isTranslucent = true
@@ -66,5 +66,6 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
 extension UIViewController{
     
+
 
 }

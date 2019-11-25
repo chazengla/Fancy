@@ -27,6 +27,7 @@
 		1F80F7A82379F3E100604176 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F80F7A72379F3E100604176 /* CategoryViewController.swift */; };
 		1F80F7AA2379F45100604176 /* FiltersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F80F7A92379F45100604176 /* FiltersViewController.swift */; };
 		1FE238C5238C78790065C0F7 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE238C4238C78790065C0F7 /* Constants.swift */; };
+		1FE238CA238C80090065C0F7 /* ItemsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE238C9238C80090065C0F7 /* ItemsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +53,7 @@
 		1F80F7A92379F45100604176 /* FiltersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FiltersViewController.swift; sourceTree = "<group>"; };
 		1FE238C4238C78790065C0F7 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		1FE238C6238C7BEF0065C0F7 /* Futura.ttc */ = {isa = PBXFileReference; lastKnownFileType = file; path = Futura.ttc; sourceTree = "<group>"; };
+		1FE238C9238C80090065C0F7 /* ItemsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				1F3193A623776E3200B8122F /* HomeViewController.swift */,
 				1F80F7A72379F3E100604176 /* CategoryViewController.swift */,
 				1F80F7A92379F45100604176 /* FiltersViewController.swift */,
+				1FE238C9238C80090065C0F7 /* ItemsViewController.swift */,
 				1F4A6F5523789CE8000F268D /* TabViewController */,
 				1F2EB47923788A9C00176B00 /* CartViewController.swift */,
 				1F4A6F5623789CFF000F268D /* Profile */,
@@ -239,6 +242,7 @@
 				1F2EB47C23788AC500176B00 /* ProfilePageViewController.swift in Sources */,
 				1F4A6F5A2378A930000F268D /* SettingsViewController.swift in Sources */,
 				1F4A6F5823789D17000F268D /* OrdersViewController.swift in Sources */,
+				1FE238CA238C80090065C0F7 /* ItemsViewController.swift in Sources */,
 				1F2EB47A23788A9C00176B00 /* CartViewController.swift in Sources */,
 				1F3193852377465500B8122F /* SceneDelegate.swift in Sources */,
 				1FE238C5238C78790065C0F7 /* Constants.swift in Sources */,

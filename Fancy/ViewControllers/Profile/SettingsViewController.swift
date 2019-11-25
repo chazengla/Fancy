@@ -22,7 +22,7 @@ class SettingsViewController: LBTAListController<SettingsListItemCell, SettingLi
         
         items = [
             .init(label: "Change phone number", viewController: OrdersViewController()),
-            .init(label: "Log out", viewController: SettingsViewController())
+            .init(label: "Log out", viewController: LandingPageViewController())
         ]
     }
         
@@ -48,7 +48,6 @@ class SettingsViewController: LBTAListController<SettingsListItemCell, SettingLi
     
     func setupNav(){
         navigationController?.navigationBar.isHidden = false
-        self.title = "Let's go"
         navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage.init(named: "backArrow"), style: .plain, target: self, action: #selector(goBack))
 
     }
@@ -125,4 +124,6 @@ struct MainPreview8: PreviewProvider {
         }
         
     }
+        
 }
+
