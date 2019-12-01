@@ -46,7 +46,7 @@ class OrdersViewController: LBTAListController<OrdersItemCell, OrderItem>, UICol
     }
     
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        goTo(vc: SingleOrderViewController())
+        goTo(vc: OrderSummaryViewController())
     }
     
     

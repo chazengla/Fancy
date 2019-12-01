@@ -56,11 +56,8 @@ class ConfirmPageViewController: UIViewController {
     
     func setupViews(){
         view.backgroundColor = .white
-        view.addSubview(enterCodeLabel)
-        view.addSubview(phoneNumberLabel)
-        view.addSubview(enterCodeTextField)
-        view.addSubview(confirmButton)
-        view.addSubview(resendCodeLabel)
+        
+        view.addSubviews(enterCodeLabel, phoneNumberLabel, enterCodeTextField, confirmButton, resendCodeLabel)
         
         enterCodeTextField.centerYToSuperview()
         enterCodeTextField.anchor(top: nil, leading: view.leadingAnchor, bottom: nil, trailing: view.trailingAnchor, padding: .init(top: 0, left: 55, bottom: 0, right: 55))

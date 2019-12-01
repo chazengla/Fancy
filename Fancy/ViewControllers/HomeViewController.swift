@@ -9,7 +9,7 @@
 import UIKit
 import LBTATools
 
-class HomeViewController: UIViewController {
+class HomeViewController: UIViewController, UITextFieldDelegate {
 
     override var prefersStatusBarHidden: Bool {
         return true
@@ -49,9 +49,8 @@ class HomeViewController: UIViewController {
         let textField = UITextField()
         let attTextForPlaceholder = NSAttributedString(string: "Search for Drinks, Sweets or more", attributes: [NSAttributedString.Key.font :  UIFont(name: Constants.futuraPrimary , size: 15)!])
         textField.attributedPlaceholder = attTextForPlaceholder
-        let attTextForText = NSAttributedString(string: "", attributes: [NSAttributedString.Key.font :  UIFont(name: Constants.futuraPrimary , size: 15)!])
-        textField.attributedText = attTextForText
-
+        textField.returnKeyType = .search
+        
         return textField
         
     }()
@@ -98,15 +97,37 @@ class HomeViewController: UIViewController {
         super.viewWillAppear(animated)
         navigationController?.navigationBar.isHidden = true
     }
+   
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        setupViews()
+        self.searchTextField.delegate = self
         
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
 
+        textField.resignFirstResponder()  //if desired
+        performAction()
+        return true
+    }
+
+    func performAction() {
         
-        setupViews()        
+        let vc = SearchResultsViewController()
+        vc.headerTitle = searchTextField.text ?? "Header"
+        goTo(vc: vc)
         
-        }
+    }
+    
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+
+        let paraStyle: NSParagraphStyle = NSParagraphStyle()
+        textField.typingAttributes = [NSAttributedString.Key.foregroundColor : UIColor.black,
+                                      NSAttributedString.Key.paragraphStyle : paraStyle, NSAttributedString.Key.font : UIFont.init(name: Constants.futuraPrimary , size: 15)!]
+    }
     
     
         
@@ -114,15 +135,12 @@ class HomeViewController: UIViewController {
         
         navigationController?.navigationBar.isHidden = true
         view.backgroundColor = .white
-        view.addSubview(logoLabelStackView)
-        view.addSubview(searchStackView)
-        view.addSubview(addressContainerView)
+       
         addChild(child)
-        view.addSubview(child.view)
-        child.didMove(toParent: self)
+        view.addSubviews(logoLabelStackView, searchStackView, addressContainerView, child.view)
         
-        addressContainerView.addSubview(addressLabel)
-        addressContainerView.addSubview(changeLabel)
+        addressContainerView.addSubviews(addressLabel, changeLabel)
+        
         
         logoLabelStackView.anchor(top: view.topAnchor, leading: view.leadingAnchor, bottom: nil, trailing: nil, padding: .init(top: 50, left: 30, bottom: 0, right: 0))
         
@@ -207,8 +225,8 @@ class CardViewController: LBTAListController<ItemCell, Item>, UICollectionViewDe
     }
     
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        
-        goTo(vc: ItemsViewController())
+        print("Selected")
+        goTo(vc: CategoryViewController())
     }
     
     

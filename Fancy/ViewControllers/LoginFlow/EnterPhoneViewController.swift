@@ -40,9 +40,8 @@ class EnterPhoneViewController: UIViewController {
         
 
         view.backgroundColor = .white
-        view.addSubview(intructionsLabel)
-        view.addSubview(phoneNumberTextField)
-        view.addSubview(nextButton)
+        view.addSubviews(intructionsLabel, phoneNumberTextField, nextButton)
+        
         phoneNumberTextField.centerYToSuperview()
         phoneNumberTextField.anchor(top: nil, leading: view.leadingAnchor, bottom: nil, trailing: view.trailingAnchor, padding: .init(top: 0, left: 55, bottom: 0, right: 55))
         intructionsLabel.centerXToSuperview()

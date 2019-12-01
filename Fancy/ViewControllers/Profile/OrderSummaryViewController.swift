@@ -10,7 +10,7 @@ import UIKit
 import LBTATools
 
 
-class SingleOrderViewController: UIViewController {
+class OrderSummaryViewController: UIViewController {
 
     let orderLabel: UILabel = {
         let label = UILabel()
@@ -224,20 +224,14 @@ class OrderCell: LBTAListCell<_Item> {
         quantityLabel.withWidth(20)
         priceLabel.withWidth(75)
         
-//        backgroundColor = .blue
-        
-//        hstack(quantityLabel, nameLabel, UIView(), priceLabel,  spacing: 0, distribution: .fillEqually).padLeft(20).padRight(20)
-//
+
+
         hstack(quantityLabel, nameLabel, priceLabel,  spacing: 10, distribution: .fillProportionally).padLeft(20).padRight(20)
         
         
     }
 }
 
-//struct Order {
-//    let orderNumber: String
-//    let items: [_Item]
-//}
 
 struct _Item{
     let name: String
@@ -255,7 +249,7 @@ struct MainPreview9: PreviewProvider {
     struct ContainerView9: UIViewControllerRepresentable {
         
         func makeUIViewController(context: UIViewControllerRepresentableContext<MainPreview9.ContainerView9>) -> UIViewController {
-            return SingleOrderViewController()
+            return OrderSummaryViewController()
         }
         
         func updateUIViewController(_ uiViewController: MainPreview9.ContainerView9.UIViewControllerType, context: UIViewControllerRepresentableContext<MainPreview9.ContainerView9>) {

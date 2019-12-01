@@ -65,6 +65,7 @@ class LandingPageViewController: UIViewController {
         return label
     }()
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -74,21 +75,21 @@ class LandingPageViewController: UIViewController {
     }
     
     func setupViews(){
+        
         view.backgroundColor = .white
-        view.addSubview(logoImage)
-        view.addSubview(fancyLabel)
-        view.addSubview(infoLabel)
-        view.addSubview(seperatorView)
-        view.addSubview(phoneNumberButton)
-        view.addSubview(tandcLabel)
-        view.addSubview(dothislaterLabel)
+        view.addSubviews(logoImage, fancyLabel, infoLabel, seperatorView, phoneNumberButton, tandcLabel, dothislaterLabel)
+        
+        
         logoImage.centerYToSuperview()
         fancyLabel.centerYToSuperview()
+        phoneNumberButton.centerXToSuperview()
+        
         logoImage.anchor(top: nil, leading: view.leadingAnchor, bottom: nil, trailing: nil, padding: .init(top: 0, left: 70, bottom: 0, right: 0))
         fancyLabel.anchor(top: nil, leading: logoImage.trailingAnchor, bottom: nil, trailing: nil, padding: .init(top: 0, left: 15, bottom: 0, right: 0))
         infoLabel.anchor(top: logoImage.bottomAnchor, leading: view.leadingAnchor, bottom: nil, trailing: nil, padding: .init(top: 25, left: 70, bottom: 0, right: 0))
         seperatorView.anchor(top: infoLabel.bottomAnchor, leading: view.leadingAnchor, bottom: nil, trailing: view.trailingAnchor, padding: .init(top: 45, left: 0, bottom: 0, right: 0))
-        phoneNumberButton.centerXToSuperview()
+        
+        
         phoneNumberButton.anchor(top: infoLabel.bottomAnchor, leading: nil, bottom: nil, trailing: nil, padding: .init(top: 90, left: 0, bottom: 0, right: 0))
         tandcLabel.centerXToSuperview()
         tandcLabel.anchor(top: phoneNumberButton.bottomAnchor, leading: nil, bottom: nil, trailing: nil, padding: .init(top: 25, left: 0, bottom: 0, right: 0))
@@ -103,7 +104,7 @@ class LandingPageViewController: UIViewController {
     }
     
     @objc func moveToNext(){
-        navigationController?.pushViewController(EnterPhoneViewController(), animated: true)
+        goTo(vc: EnterPhoneViewController())
     }
 
 
