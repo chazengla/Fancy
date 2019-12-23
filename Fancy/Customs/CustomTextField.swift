@@ -44,6 +44,7 @@ class CustomTextField: UIView{
     
     func setupUI(_ placeholder: String, _ bolded: Bool){
         
+   
         if bolded == true{
             let attText = NSMutableAttributedString(string: String(placeholder.prefix(3)), attributes: [NSAttributedString.Key.font :  UIFont(name: Constants.futuraPrimary , size: 20)!, NSAttributedString.Key.foregroundColor : Document.black])
             let attText2 = NSMutableAttributedString(string: String(placeholder.suffix(11)), attributes: [NSAttributedString.Key.font :  UIFont(name: Constants.futuraPrimary , size: 20)!])

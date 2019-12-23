@@ -37,30 +37,6 @@ class HomeViewController: UIViewController, UITextFieldDelegate {
         return stackView
     }()
     
-    let searchIcon: UIImageView = {
-        let imageView = UIImageView()
-        imageView.image = #imageLiteral(resourceName: "searchIcon").withRenderingMode(.alwaysTemplate)
-        imageView.tintColor = Document.grey
-        imageView.withSize(.init(width: 18, height: 18))
-        return imageView
-    }()
-    
-    let searchTextField: UITextField = {
-        let textField = UITextField()
-        let attTextForPlaceholder = NSAttributedString(string: "Search for Drinks, Sweets or more", attributes: [NSAttributedString.Key.font :  UIFont(name: Constants.futuraPrimary , size: 15)!])
-        textField.attributedPlaceholder = attTextForPlaceholder
-        textField.returnKeyType = .search
-        
-        return textField
-        
-    }()
-    
-    lazy var searchStackView: UIStackView = {
-        let stackView = UIStackView(arrangedSubviews: [searchIcon, searchTextField])
-        stackView.alignment = .center
-        stackView.spacing = 10
-        return stackView
-    }()
     
     
     let addressContainerView: UIView = {
@@ -103,24 +79,10 @@ class HomeViewController: UIViewController, UITextFieldDelegate {
         super.viewDidLoad()
         
         setupViews()
-        self.searchTextField.delegate = self
+        
         
     }
     
-    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-
-        textField.resignFirstResponder()  //if desired
-        performAction()
-        return true
-    }
-
-    func performAction() {
-        
-        let vc = SearchResultsViewController()
-        vc.headerTitle = searchTextField.text ?? "Header"
-        goTo(vc: vc)
-        
-    }
     
     func textFieldDidBeginEditing(_ textField: UITextField) {
 
@@ -137,16 +99,15 @@ class HomeViewController: UIViewController, UITextFieldDelegate {
         view.backgroundColor = .white
        
         addChild(child)
-        view.addSubviews(logoLabelStackView, searchStackView, addressContainerView, child.view)
+        view.addSubviews(logoLabelStackView, addressContainerView, child.view)
         
         addressContainerView.addSubviews(addressLabel, changeLabel)
         
         
         logoLabelStackView.anchor(top: view.topAnchor, leading: view.leadingAnchor, bottom: nil, trailing: nil, padding: .init(top: 50, left: 30, bottom: 0, right: 0))
         
-        searchStackView.anchor(top: logoLabelStackView.bottomAnchor, leading: view.leadingAnchor, bottom: nil, trailing: nil, padding: .init(top: 50, left: 30, bottom: 0, right: 0))
         
-        addressContainerView.anchor(top: searchStackView.bottomAnchor, leading: view.leadingAnchor, bottom: nil, trailing: view.trailingAnchor, padding: .init(top: 20, left: 0, bottom: 0, right: 0))
+        addressContainerView.anchor(top: logoLabelStackView.bottomAnchor, leading: view.leadingAnchor, bottom: nil, trailing: view.trailingAnchor, padding: .init(top: 60, left: 0, bottom: 0, right: 0))
         
         addressLabel.centerYToSuperview()
         addressLabel.anchor(top: nil, leading: view.leadingAnchor, bottom: nil, trailing: nil, padding: .init(top: 0, left: 30, bottom: 0, right: 0))
@@ -154,7 +115,7 @@ class HomeViewController: UIViewController, UITextFieldDelegate {
         changeLabel.centerYToSuperview()
         changeLabel.anchor(top: nil, leading: nil, bottom: nil, trailing: view.trailingAnchor, padding: .init(top: 0, left: 0, bottom: 0, right: 30))
         
-        child.view.anchor(top: changeLabel.bottomAnchor, leading: view.leadingAnchor, bottom: view.bottomAnchor, trailing: view.trailingAnchor, padding: .init(top: 10, left: 0, bottom: 0, right: 0))
+        child.view.anchor(top: changeLabel.bottomAnchor, leading: view.leadingAnchor, bottom: view.bottomAnchor, trailing: view.trailingAnchor, padding: .init(top: 10, left: 0, bottom: 0, right: 10))
         
         
         
@@ -226,7 +187,7 @@ class CardViewController: LBTAListController<ItemCell, Item>, UICollectionViewDe
     
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         print("Selected")
-        goTo(vc: CategoryViewController())
+        goTo(vc: SearchResultsViewController())
     }
     
     

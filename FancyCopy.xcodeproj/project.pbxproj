@@ -7,12 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F01CA3423AE95B800AEDF48 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F01CA3323AE95B800AEDF48 /* Assets.xcassets */; };
+		1F01CA8423AFA9F400AEDF48 /* AddressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F01CA8323AFA9F400AEDF48 /* AddressViewController.swift */; };
+		1F01CA8623AFB9D000AEDF48 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F01CA8523AFB9D000AEDF48 /* MapViewController.swift */; };
+		1F01CA8823AFBC8100AEDF48 /* CheckoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F01CA8723AFBC8100AEDF48 /* CheckoutViewController.swift */; };
+		1F01CA8B23B00F6F00AEDF48 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = 1F01CA8A23B00F6F00AEDF48 /* SwiftyJSON */; };
 		1F09FF582393C6F60020AB5E /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F09FF572393C6F60020AB5E /* Extensions.swift */; };
 		1F2EB47C23788AC500176B00 /* ProfilePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2EB47B23788AC500176B00 /* ProfilePageViewController.swift */; };
 		1F3193832377465500B8122F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3193822377465500B8122F /* AppDelegate.swift */; };
 		1F3193852377465500B8122F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3193842377465500B8122F /* SceneDelegate.swift */; };
 		1F3193872377465500B8122F /* LandingPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3193862377465500B8122F /* LandingPageViewController.swift */; };
-		1F31938C2377465700B8122F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F31938B2377465700B8122F /* Assets.xcassets */; };
 		1F31938F2377465700B8122F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F31938D2377465700B8122F /* LaunchScreen.storyboard */; };
 		1F319399237746BA00B8122F /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F319398237746BA00B8122F /* CustomButton.swift */; };
 		1F31939C2377470C00B8122F /* LBTATools in Frameworks */ = {isa = PBXBuildFile; productRef = 1F31939B2377470C00B8122F /* LBTATools */; };
@@ -21,6 +25,7 @@
 		1F3193A223775BEF00B8122F /* ConfirmPhoneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3193A123775BEF00B8122F /* ConfirmPhoneViewController.swift */; };
 		1F3193A723776E3200B8122F /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3193A623776E3200B8122F /* HomeViewController.swift */; };
 		1F3B21B923946E1000058193 /* CartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3B21B823946E1000058193 /* CartViewController.swift */; };
+		1F3B21BB239478F700058193 /* CustomViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3B21BA239478F700058193 /* CustomViews.swift */; };
 		1F4A6F54237891D3000F268D /* AppTabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A6F53237891D3000F268D /* AppTabViewController.swift */; };
 		1F4A6F5823789D17000F268D /* OrdersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A6F5723789D17000F268D /* OrdersViewController.swift */; };
 		1F4A6F5A2378A930000F268D /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A6F592378A930000F268D /* SettingsViewController.swift */; };
@@ -28,19 +33,20 @@
 		1F601F712392F52900569FA8 /* SearchResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F601F702392F52900569FA8 /* SearchResultsViewController.swift */; };
 		1F601F732393219C00569FA8 /* ProductPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F601F722393219C00569FA8 /* ProductPageViewController.swift */; };
 		1F601F7623933AEB00569FA8 /* ItemCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F601F7523933AEB00569FA8 /* ItemCollectionViewController.swift */; };
-		1F85549A2392ECAA008AF87D /* FilterCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8554992392ECAA008AF87D /* FilterCollectionViewController.swift */; };
 		1FE238C5238C78790065C0F7 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE238C4238C78790065C0F7 /* Constants.swift */; };
-		1FE238CA238C80090065C0F7 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE238C9238C80090065C0F7 /* CategoryViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1F01CA3323AE95B800AEDF48 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1F01CA8323AFA9F400AEDF48 /* AddressViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressViewController.swift; sourceTree = "<group>"; };
+		1F01CA8523AFB9D000AEDF48 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		1F01CA8723AFBC8100AEDF48 /* CheckoutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckoutViewController.swift; sourceTree = "<group>"; };
 		1F09FF572393C6F60020AB5E /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		1F2EB47B23788AC500176B00 /* ProfilePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePageViewController.swift; sourceTree = "<group>"; };
-		1F31937F2377465500B8122F /* Fancy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fancy.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F31937F2377465500B8122F /* FancyCopyCopy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FancyCopyCopy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F3193822377465500B8122F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1F3193842377465500B8122F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		1F3193862377465500B8122F /* LandingPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingPageViewController.swift; sourceTree = "<group>"; };
-		1F31938B2377465700B8122F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1F31938E2377465700B8122F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1F3193902377465700B8122F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1F319398237746BA00B8122F /* CustomButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
@@ -49,6 +55,7 @@
 		1F3193A123775BEF00B8122F /* ConfirmPhoneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfirmPhoneViewController.swift; sourceTree = "<group>"; };
 		1F3193A623776E3200B8122F /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		1F3B21B823946E1000058193 /* CartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewController.swift; sourceTree = "<group>"; };
+		1F3B21BA239478F700058193 /* CustomViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomViews.swift; sourceTree = "<group>"; };
 		1F4A6F53237891D3000F268D /* AppTabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTabViewController.swift; sourceTree = "<group>"; };
 		1F4A6F5723789D17000F268D /* OrdersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdersViewController.swift; sourceTree = "<group>"; };
 		1F4A6F592378A930000F268D /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
@@ -56,10 +63,8 @@
 		1F601F702392F52900569FA8 /* SearchResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultsViewController.swift; sourceTree = "<group>"; };
 		1F601F722393219C00569FA8 /* ProductPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductPageViewController.swift; sourceTree = "<group>"; };
 		1F601F7523933AEB00569FA8 /* ItemCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCollectionViewController.swift; sourceTree = "<group>"; };
-		1F8554992392ECAA008AF87D /* FilterCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilterCollectionViewController.swift; sourceTree = "<group>"; };
 		1FE238C4238C78790065C0F7 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		1FE238C6238C7BEF0065C0F7 /* Futura.ttc */ = {isa = PBXFileReference; lastKnownFileType = file; path = Futura.ttc; sourceTree = "<group>"; };
-		1FE238C9238C80090065C0F7 /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +72,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F01CA8B23B00F6F00AEDF48 /* SwiftyJSON in Frameworks */,
 				1F31939C2377470C00B8122F /* LBTATools in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -95,7 +101,7 @@
 		1F3193802377465500B8122F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1F31937F2377465500B8122F /* Fancy.app */,
+				1F31937F2377465500B8122F /* FancyCopyCopy.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -109,9 +115,9 @@
 				1FE238C4238C78790065C0F7 /* Constants.swift */,
 				1F09FF572393C6F60020AB5E /* Extensions.swift */,
 				1FE238C6238C7BEF0065C0F7 /* Futura.ttc */,
-				1F31938B2377465700B8122F /* Assets.xcassets */,
 				1F31938D2377465700B8122F /* LaunchScreen.storyboard */,
 				1F3193902377465700B8122F /* Info.plist */,
+				1F01CA3323AE95B800AEDF48 /* Assets.xcassets */,
 			);
 			path = Fancy;
 			sourceTree = "<group>";
@@ -122,10 +128,11 @@
 				1F09FF592393C9040020AB5E /* LoginFlow */,
 				1F3193A623776E3200B8122F /* HomeViewController.swift */,
 				1F601F702392F52900569FA8 /* SearchResultsViewController.swift */,
-				1FE238C9238C80090065C0F7 /* CategoryViewController.swift */,
-				1F8554992392ECAA008AF87D /* FilterCollectionViewController.swift */,
 				1F601F722393219C00569FA8 /* ProductPageViewController.swift */,
 				1F3B21B823946E1000058193 /* CartViewController.swift */,
+				1F01CA8323AFA9F400AEDF48 /* AddressViewController.swift */,
+				1F01CA8523AFB9D000AEDF48 /* MapViewController.swift */,
+				1F01CA8723AFBC8100AEDF48 /* CheckoutViewController.swift */,
 				1F601F7423933A8E00569FA8 /* Re-usable Collection Views */,
 				1F4A6F5523789CE8000F268D /* TabViewController */,
 				1F4A6F5623789CFF000F268D /* Profile */,
@@ -147,6 +154,7 @@
 			children = (
 				1F319398237746BA00B8122F /* CustomButton.swift */,
 				1F31939F237755E200B8122F /* CustomTextField.swift */,
+				1F3B21BA239478F700058193 /* CustomViews.swift */,
 			);
 			path = Customs;
 			sourceTree = "<group>";
@@ -181,9 +189,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		1F31937E2377465500B8122F /* Fancy */ = {
+		1F31937E2377465500B8122F /* FancyCopy */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1F3193932377465700B8122F /* Build configuration list for PBXNativeTarget "Fancy" */;
+			buildConfigurationList = 1F3193932377465700B8122F /* Build configuration list for PBXNativeTarget "FancyCopy" */;
 			buildPhases = (
 				1F31937B2377465500B8122F /* Sources */,
 				1F31937C2377465500B8122F /* Frameworks */,
@@ -193,12 +201,13 @@
 			);
 			dependencies = (
 			);
-			name = Fancy;
+			name = FancyCopy;
 			packageProductDependencies = (
 				1F31939B2377470C00B8122F /* LBTATools */,
+				1F01CA8A23B00F6F00AEDF48 /* SwiftyJSON */,
 			);
 			productName = Fancy;
-			productReference = 1F31937F2377465500B8122F /* Fancy.app */;
+			productReference = 1F31937F2377465500B8122F /* FancyCopyCopy.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -216,7 +225,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 1F31937A2377465500B8122F /* Build configuration list for PBXProject "Fancy" */;
+			buildConfigurationList = 1F31937A2377465500B8122F /* Build configuration list for PBXProject "FancyCopy" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -227,12 +236,13 @@
 			mainGroup = 1F3193762377465500B8122F;
 			packageReferences = (
 				1F31939A2377470C00B8122F /* XCRemoteSwiftPackageReference "LBTATools" */,
+				1F01CA8923B00F6F00AEDF48 /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
 			);
 			productRefGroup = 1F3193802377465500B8122F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				1F31937E2377465500B8122F /* Fancy */,
+				1F31937E2377465500B8122F /* FancyCopy */,
 			);
 		};
 /* End PBXProject section */
@@ -242,8 +252,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F01CA3423AE95B800AEDF48 /* Assets.xcassets in Resources */,
 				1F31938F2377465700B8122F /* LaunchScreen.storyboard in Resources */,
-				1F31938C2377465700B8122F /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -254,7 +264,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1F85549A2392ECAA008AF87D /* FilterCollectionViewController.swift in Sources */,
 				1F4A6F5C2378BBF8000F268D /* OrderSummaryViewController.swift in Sources */,
 				1F3193A0237755E200B8122F /* CustomTextField.swift in Sources */,
 				1F3193872377465500B8122F /* LandingPageViewController.swift in Sources */,
@@ -263,14 +272,17 @@
 				1F31939E237753FF00B8122F /* EnterPhoneViewController.swift in Sources */,
 				1F601F732393219C00569FA8 /* ProductPageViewController.swift in Sources */,
 				1F09FF582393C6F60020AB5E /* Extensions.swift in Sources */,
+				1F3B21BB239478F700058193 /* CustomViews.swift in Sources */,
 				1F3193A223775BEF00B8122F /* ConfirmPhoneViewController.swift in Sources */,
 				1F3193A723776E3200B8122F /* HomeViewController.swift in Sources */,
+				1F01CA8623AFB9D000AEDF48 /* MapViewController.swift in Sources */,
+				1F01CA8823AFBC8100AEDF48 /* CheckoutViewController.swift in Sources */,
 				1F319399237746BA00B8122F /* CustomButton.swift in Sources */,
+				1F01CA8423AFA9F400AEDF48 /* AddressViewController.swift in Sources */,
 				1F2EB47C23788AC500176B00 /* ProfilePageViewController.swift in Sources */,
 				1F601F712392F52900569FA8 /* SearchResultsViewController.swift in Sources */,
 				1F4A6F5A2378A930000F268D /* SettingsViewController.swift in Sources */,
 				1F4A6F5823789D17000F268D /* OrdersViewController.swift in Sources */,
-				1FE238CA238C80090065C0F7 /* CategoryViewController.swift in Sources */,
 				1F3B21B923946E1000058193 /* CartViewController.swift in Sources */,
 				1F3193852377465500B8122F /* SceneDelegate.swift in Sources */,
 				1FE238C5238C78790065C0F7 /* Constants.swift in Sources */,
@@ -417,8 +429,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.arnsenglander.Fancy;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.arnsenglander.FancyCopy;
+				PRODUCT_NAME = FancyCopyCopy;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -435,8 +447,8 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.arnsenglander.Fancy;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_BUNDLE_IDENTIFIER = com.arnsenglander.FancyCopy;
+				PRODUCT_NAME = FancyCopyCopy;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -445,7 +457,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1F31937A2377465500B8122F /* Build configuration list for PBXProject "Fancy" */ = {
+		1F31937A2377465500B8122F /* Build configuration list for PBXProject "FancyCopy" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1F3193912377465700B8122F /* Debug */,
@@ -454,7 +466,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1F3193932377465700B8122F /* Build configuration list for PBXNativeTarget "Fancy" */ = {
+		1F3193932377465700B8122F /* Build configuration list for PBXNativeTarget "FancyCopy" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1F3193942377465700B8122F /* Debug */,
@@ -466,6 +478,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		1F01CA8923B00F6F00AEDF48 /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
 		1F31939A2377470C00B8122F /* XCRemoteSwiftPackageReference "LBTATools" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/bhlvoong/LBTATools";
@@ -477,6 +497,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		1F01CA8A23B00F6F00AEDF48 /* SwiftyJSON */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1F01CA8923B00F6F00AEDF48 /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
+			productName = SwiftyJSON;
+		};
 		1F31939B2377470C00B8122F /* LBTATools */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 1F31939A2377470C00B8122F /* XCRemoteSwiftPackageReference "LBTATools" */;

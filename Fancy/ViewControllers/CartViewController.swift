@@ -106,8 +106,13 @@ class CartViewController: UIViewController {
         label.font = UIFont(name: Constants.futuraPrimary, size: 15)
         return label
     }()
+    
+    let seperator = Seperator()
+    
+    let headerLabel2 = UILabel(text: "You might also like", font: UIFont(name: Constants.futuraPrimary, size: 20), textColor: .black)
 
     let child = SingleOrderListViewController()
+    let child2 = HorizontalItemCollectionViewController(scrollDirection: .horizontal)
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -121,8 +126,11 @@ class CartViewController: UIViewController {
     func setupViews(){
         
         addChild(child)
+        addChild(child2)
         view.backgroundColor = .white
-        view.addSubviews(headerLabel, child.view, vStack, orderTotalStack, bottomContainerView, addVoucherCodeView)
+        view.addSubviews(headerLabel, child.view, vStack, orderTotalStack, bottomContainerView, addVoucherCodeView, headerLabel2, child2.view, seperator)
+        
+        
         headerLabel.anchor(top: view.safeAreaLayoutGuide.topAnchor, leading: view.leadingAnchor, bottom: nil, trailing: view.trailingAnchor, padding: .init(top: 20, left: 20, bottom: 0, right: 0))
         child.view.anchor(top: headerLabel.bottomAnchor, leading: view.leadingAnchor, bottom: nil, trailing: view.trailingAnchor, padding: .init(top: 20, left: 0, bottom: 0, right: 0))
         child.view.withHeight(250)
@@ -133,10 +141,23 @@ class CartViewController: UIViewController {
         
         vStack.anchor(top: child.view.bottomAnchor, leading: view.leadingAnchor, bottom: nil, trailing: view.trailingAnchor, padding: .init(top: 20, left: 20, bottom: 0, right: 20))
         
-        bottomContainerView.anchor(top: vStack.bottomAnchor, leading: view.leadingAnchor, bottom: view.bottomAnchor, trailing: view.trailingAnchor, padding: .init(top: 35, left: 0, bottom: 0, right: 0))
+        bottomContainerView.anchor(top: vStack.bottomAnchor, leading: view.leadingAnchor, bottom: nil, trailing: view.trailingAnchor, padding: .init(top: 35, left: 0, bottom: 0, right: 0))
+        bottomContainerView.withHeight(110)
         
         addVoucherCodeView.anchor(top: bottomContainerView.topAnchor, leading: view.leadingAnchor, bottom: nil, trailing: view.trailingAnchor, padding: .init(top: 35, left: 0, bottom: 0, right: 0))
         addVoucherCodeView.withHeight(75)
+        
+        addVoucherCodeView.addSubviews(addVoucherCodeLabel)
+        addVoucherCodeLabel.centerYToSuperview()
+        addVoucherCodeLabel.anchor(top: nil, leading: superview(view: addVoucherCodeLabel)?.leadingAnchor, bottom: nil, trailing: superview(view: addVoucherCodeLabel)?.trailingAnchor, padding: .init(top: 0, left: 20, bottom: 0, right: 0))
+        
+        seperator.anchor(top: addVoucherCodeView.bottomAnchor, leading: view.leadingAnchor, bottom: nil, trailing: view.trailingAnchor)
+        
+        headerLabel2.anchor(top: addVoucherCodeView.bottomAnchor, leading: view.leadingAnchor, bottom: nil, trailing: view.trailingAnchor, padding: .init(top: 30, left: 20, bottom: 0, right: 0))
+        
+        child2.view.anchor(top: headerLabel2.bottomAnchor, leading: view.leadingAnchor, bottom: nil, trailing: view.trailingAnchor, padding: .init(top: 20, left: 0, bottom: 0, right: 0))
+        
+        child2.view.withHeight(200)
 
         
         
@@ -178,4 +199,12 @@ struct MainPreview15: PreviewProvider {
         
     }
         
+}
+
+extension UIViewController{
+    
+    func superview(view: UIView) -> UIView? {
+        guard let superview = view.superview else { return nil }
+        return superview
+    }
 }

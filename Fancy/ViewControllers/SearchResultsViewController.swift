@@ -142,7 +142,7 @@ class SearchResultsViewController: LBTAListHeaderController<IndividualItemCell, 
 import SwiftUI
 struct MainPreview13: PreviewProvider {
     static var previews: some View {
-//        Text("main preview 133133")
+
         ContainerView13().edgesIgnoringSafeArea(.all)
     }
     
