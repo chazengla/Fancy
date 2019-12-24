@@ -13,7 +13,7 @@ class Seperator: UIView{
     override init(frame: CGRect) {
         super.init(frame: .zero)
         
-        backgroundColor = Document.lightGrey
+        backgroundColor = Colors.lightGrey
         withHeight(2)
     }
     
@@ -24,7 +24,7 @@ class Seperator: UIView{
     
 }
 
-class CustomAddedButton: UIView{
+class EditQuantityButton: UIView{
     
     let addButton = CustomAddButton(title: "1")
     let minusButton: UIButton = {

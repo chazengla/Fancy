@@ -63,14 +63,14 @@ class OrdersViewController: LBTAListController<OrdersItemCell, OrderItem>, UICol
 
 class OrdersItemCell: LBTAListCell<OrderItem> {
     
-    let orderNumberLabel = UILabel(text: "#23409", font: UIFont(name: Constants.futuraPrimary, size: 15), textColor: Document.black)
-    let priceLabel = UILabel(text: "£23.90", font: UIFont(name: Constants.futuraPrimary, size: 15), textColor: Document.grey)
-    let dateLabel = UILabel(text: "12 November 2019", font: UIFont(name: Constants.futuraPrimary, size: 15), textColor: Document.grey)
+    let orderNumberLabel = UILabel(text: "#23409", font: UIFont(name: Constants.futuraPrimary, size: 15), textColor: Colors.black)
+    let priceLabel = UILabel(text: "£23.90", font: UIFont(name: Constants.futuraPrimary, size: 15), textColor: Colors.grey)
+    let dateLabel = UILabel(text: "12 November 2019", font: UIFont(name: Constants.futuraPrimary, size: 15), textColor: Colors.grey)
     
     
     lazy var seperatorView: UIView = {
         let view = UIView()
-        view.backgroundColor = Document.grey.withAlphaComponent(0.2)
+        view.backgroundColor = Colors.grey.withAlphaComponent(0.2)
         view.withHeight(1)
         return view
     }()
@@ -78,7 +78,7 @@ class OrdersItemCell: LBTAListCell<OrderItem> {
     let arrowImage: UIImageView = {
         let arrow = UIImageView()
         arrow.image = #imageLiteral(resourceName: "rightArrow").withRenderingMode(.alwaysTemplate)
-        arrow.tintColor = Document.grey
+        arrow.tintColor = Colors.grey
         arrow.withSize(.init(width: 20, height: 20))
         return arrow
     }()

@@ -15,7 +15,7 @@ class ProfilePageViewController: UIViewController {
         let label = UILabel()
         label.text = "Hello Jack"
         label.font = UIFont(name: Constants.futuraPrimary, size: 20)
-        label.textColor = Document.hotPink
+        label.textColor = Colors.hotPink
         
         return label
     }()
@@ -56,7 +56,7 @@ class ProfileListItemCell: LBTAListCell<ProfileListItem> {
     
     lazy var seperatorView: UIView = {
         let view = UIView()
-        view.backgroundColor = Document.grey.withAlphaComponent(0.2)
+        view.backgroundColor = Colors.grey.withAlphaComponent(0.2)
         view.withHeight(1)
         return view
     }()
@@ -64,7 +64,7 @@ class ProfileListItemCell: LBTAListCell<ProfileListItem> {
     let arrowImage: UIImageView = {
         let arrow = UIImageView()
         arrow.image = #imageLiteral(resourceName: "rightArrow").withRenderingMode(.alwaysTemplate)
-        arrow.tintColor = Document.grey
+        arrow.tintColor = Colors.grey
         arrow.withSize(.init(width: 20, height: 20))
         return arrow
     }()

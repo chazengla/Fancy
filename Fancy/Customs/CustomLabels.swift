@@ -21,7 +21,7 @@ class ErrorMessageLabel: UILabel{
     
     init(text: String) {
         super.init(frame: .zero)
-        let att = NSAttributedString(string: text, attributes: [NSAttributedString.Key.font : UIFont(name: Constants.futuraPrimary, size: 13)!, NSAttributedString.Key.foregroundColor : Document.errorRed])
+        let att = NSAttributedString(string: text, attributes: [NSAttributedString.Key.font : UIFont(name: Constants.futuraPrimary, size: 13)!, NSAttributedString.Key.foregroundColor : Colors.errorRed])
         attributedText = att
         textAlignment = .center
         isHidden = true

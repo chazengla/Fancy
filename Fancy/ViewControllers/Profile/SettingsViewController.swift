@@ -61,7 +61,7 @@ class SettingsListItemCell: LBTAListCell<SettingListItem> {
         
     lazy var seperatorView: UIView = {
         let view = UIView()
-        view.backgroundColor = Document.grey.withAlphaComponent(0.2)
+        view.backgroundColor = Colors.grey.withAlphaComponent(0.2)
         view.withHeight(1)
         return view
     }()
@@ -69,7 +69,7 @@ class SettingsListItemCell: LBTAListCell<SettingListItem> {
     let arrowImage: UIImageView = {
         let arrow = UIImageView()
         arrow.image = #imageLiteral(resourceName: "rightArrow").withRenderingMode(.alwaysTemplate)
-        arrow.tintColor = Document.grey
+        arrow.tintColor = Colors.grey
         arrow.withSize(.init(width: 20, height: 20))
         return arrow
     }()

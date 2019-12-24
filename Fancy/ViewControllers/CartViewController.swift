@@ -18,7 +18,7 @@ class CartViewController: UIViewController {
     let subtotalLabel: UILabel = {
         let label = UILabel()
         label.text = "Subtotal"
-        label.textColor = Document.grey
+        label.textColor = Colors.grey
         label.font = UIFont(name: Constants.futuraPrimary, size: 15)
         return label
     }()
@@ -26,7 +26,7 @@ class CartViewController: UIViewController {
     let subtotalValueLabel: UILabel = {
         let label = UILabel()
         label.text = "£2.57"
-        label.textColor = Document.grey
+        label.textColor = Colors.grey
         label.textAlignment = .right
         label.font = UIFont(name: Constants.futuraPrimary, size: 15)
         return label
@@ -35,7 +35,7 @@ class CartViewController: UIViewController {
     let deliveryFeeLabel: UILabel = {
         let label = UILabel()
         label.text = "Delivery fee"
-        label.textColor = Document.grey
+        label.textColor = Colors.grey
         label.font = UIFont(name: Constants.futuraPrimary, size: 15)
         return label
     }()
@@ -43,7 +43,7 @@ class CartViewController: UIViewController {
     let deliveryFeeValueLabel: UILabel = {
         let label = UILabel()
         label.text = "£3.57"
-        label.textColor = Document.grey
+        label.textColor = Colors.grey
         label.textAlignment = .right
         label.font = UIFont(name: Constants.futuraPrimary, size: 15)
         return label
@@ -52,7 +52,7 @@ class CartViewController: UIViewController {
     let serviceFeeLabel: UILabel = {
         let label = UILabel()
         label.text = "Service fee"
-        label.textColor = Document.grey
+        label.textColor = Colors.grey
         label.font = UIFont(name: Constants.futuraPrimary, size: 15)
         return label
     }()
@@ -60,7 +60,7 @@ class CartViewController: UIViewController {
     let serviceFeeValueLabel: UILabel = {
         let label = UILabel()
         label.text = "£0.57"
-        label.textColor = Document.grey
+        label.textColor = Colors.grey
         label.textAlignment = .right
         label.font = UIFont(name: Constants.futuraPrimary, size: 15)
         return label
@@ -91,7 +91,7 @@ class CartViewController: UIViewController {
     
     let bottomContainerView: UIView = {
         let view = UIView()
-        view.backgroundColor = Document.grey.withAlphaComponent(0.25)
+        view.backgroundColor = Colors.grey.withAlphaComponent(0.25)
         return view
     }()
     
@@ -104,7 +104,7 @@ class CartViewController: UIViewController {
     let addVoucherCodeLabel: UILabel = {
         let label = UILabel()
         label.text = "Add voucher code"
-        label.textColor = Document.hotPink
+        label.textColor = Colors.hotPink
         label.font = UIFont(name: Constants.futuraPrimary, size: 15)
         return label
     }()

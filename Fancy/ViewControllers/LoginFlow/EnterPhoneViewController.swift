@@ -15,7 +15,7 @@ class EnterPhoneViewController: UIViewController {
         let label = UILabel()
         label.text = "Enter your mobile phone number"
         label.font = UIFont(name: Constants.futuraPrimary, size: 20)
-        label.textColor = Document.black
+        label.textColor = Colors.black
         
         return label
     }()

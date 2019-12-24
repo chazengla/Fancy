@@ -15,7 +15,7 @@ class ProductPageViewController: UIViewController {
     
     let itemImageView: UIImageView = {
         let img = UIImageView()
-        img.backgroundColor = Document.grey
+        img.backgroundColor = Colors.grey
         img.image = UIImage(named: "crisp")
         img.contentMode = .scaleAspectFill
     
@@ -25,13 +25,13 @@ class ProductPageViewController: UIViewController {
     
     let imageContainer: UIView = {
         let container = UIView()
-        container.backgroundColor = Document.white
+        container.backgroundColor = Colors.white
         return container
     }()
     
     let itemContainer: UIView = {
         let container = UIView()
-        container.backgroundColor = Document.white
+        container.backgroundColor = Colors.white
         return container
     }()
     
@@ -43,7 +43,7 @@ class ProductPageViewController: UIViewController {
         let name = UILabel()
         name.text = "Bacon Rashers Crips"
         name.font = UIFont(name: Constants.futuraBold, size: 20)
-        name.textColor = Document.hotPink
+        name.textColor = Colors.hotPink
         return name
     }()
     
@@ -51,13 +51,13 @@ class ProductPageViewController: UIViewController {
         let price = UILabel()
         price.text = "£1.99"
         price.font = UIFont(name: Constants.futuraPrimary, size: 20)
-        price.textColor = Document.black
+        price.textColor = Colors.black
         return price
     }()
     
     let addToCartButton = CustomAddButton(title: "Add to cart")
     
-    let addedToCartButton = CustomAddedButton()
+    let addedToCartButton = EditQuantityButton()
     
     
     let headerLabel = UILabel(text: "You might also like", font: UIFont(name: Constants.futuraPrimary, size: 20), textColor: .black)

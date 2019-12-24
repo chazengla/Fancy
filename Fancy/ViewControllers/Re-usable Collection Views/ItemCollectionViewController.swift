@@ -57,7 +57,7 @@ class HorizontalItemCollectionViewController: LBTAListController<IndividualItemC
 class IndividualItemCell: LBTAListCell<IndividualItem> {
     
     let itemLabel = UILabel(text: "£2.99", font: Fonts.futuraMedium12, textColor: .white, textAlignment: .center)
-    let bottomView = UIView(backgroundColor: Document.hotPink)
+    let bottomView = UIView(backgroundColor: Colors.hotPink)
     
     
 //    override var item: IndividualItem! {
@@ -69,12 +69,12 @@ class IndividualItemCell: LBTAListCell<IndividualItem> {
     override func setupViews() {
         super.setupViews()
         
-        layer.borderColor = Document.grey.cgColor
+        layer.borderColor = Colors.grey.cgColor
         layer.borderWidth = 1
         layer.cornerRadius = 5
         clipsToBounds = true
         
-        bottomView.layer.borderColor = Document.hotPink.cgColor
+        bottomView.layer.borderColor = Colors.hotPink.cgColor
         bottomView.layer.borderWidth = 1
 
         

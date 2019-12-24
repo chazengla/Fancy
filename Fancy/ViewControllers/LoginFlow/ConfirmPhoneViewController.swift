@@ -15,7 +15,7 @@ class ConfirmPageViewController: UIViewController {
         let label = UILabel()
         label.text = "Enter the code we sent you to"
         label.font = UIFont(name: Constants.futuraPrimary, size: 20)
-        label.textColor = Document.black
+        label.textColor = Colors.black
         
         return label
     }()
@@ -24,7 +24,7 @@ class ConfirmPageViewController: UIViewController {
         let label = UILabel()
         label.text = "+44 7955789831"
         label.font = UIFont(name: Constants.futuraPrimary, size: 20)
-        label.textColor = Document.black
+        label.textColor = Colors.black
         
         return label
     }()
@@ -43,7 +43,7 @@ class ConfirmPageViewController: UIViewController {
         let label = UILabel()
         label.text = "Resend Code"
         label.font = UIFont(name: Constants.futuraPrimary, size: 15)
-        label.textColor = Document.hotPink
+        label.textColor = Colors.hotPink
         
         return label
     }()

@@ -8,7 +8,7 @@
 
 import UIKit
 
-struct Document {
+struct Colors {
     static let hotPink = UIColor(netHex: 0xF49BEF)
     static let mintGreen = UIColor(netHex: 0x20F1A7)
     static let black = UIColor(netHex: 0x000000)

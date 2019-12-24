@@ -11,9 +11,10 @@ import UIKit
 class EmptyCartViewController: UIViewController {
 
     let transparentView = UIView()
-    let viewTest = UIView(backgroundColor: Document.white)
+//    let viewTest = UIView(backgroundColor: Colors.white)
+    let child = EditItemQuantityViewController()
     
-    let emptyCartLabel = UILabel(text: "Your cart is empty", font: Fonts.futuraBold20, textColor: Document.black, textAlignment: .center)
+    let emptyCartLabel = UILabel(text: "Your cart is empty", font: Fonts.futuraBold20, textColor: Colors.black, textAlignment: .center)
     
     let imageView = UIImageView(image: UIImage(named: "sad_face"))
     
@@ -48,7 +49,7 @@ class EmptyCartViewController: UIViewController {
         goTo(vc: AppTabViewController())
     }
     
-    let height: CGFloat = 250
+    lazy var height: CGFloat = view.frame.height / 3
     
     @objc func filterPressed(){
         
@@ -58,8 +59,8 @@ class EmptyCartViewController: UIViewController {
         window?.addSubview(transparentView)
 
         let screenSize = UIScreen.main.bounds.size
-        viewTest.frame = CGRect(x: 0, y: screenSize.height, width: screenSize.width, height: height)
-        window?.addSubview(viewTest)
+        child.view.frame = CGRect(x: 0, y: screenSize.height, width: screenSize.width, height: height)
+        window?.addSubview(child.view)
 
         let tapGesture = UITapGestureRecognizer(target: self, action: #selector(onClickTransparentView))
         transparentView.addGestureRecognizer(tapGesture)
@@ -68,7 +69,7 @@ class EmptyCartViewController: UIViewController {
 
         UIView.animate(withDuration: 0.5, delay: 0, usingSpringWithDamping: 1.0, initialSpringVelocity: 1.0, options: .curveEaseInOut, animations: {
             self.transparentView.alpha = 0.5
-            self.viewTest.frame = CGRect(x: 0, y: screenSize.height - self.height, width: screenSize.width, height: self.height)
+            self.child.view.frame = CGRect(x: 0, y: screenSize.height - self.height, width: screenSize.width, height: self.height)
         }, completion: nil)
 
         
@@ -82,7 +83,7 @@ class EmptyCartViewController: UIViewController {
 
            UIView.animate(withDuration: 0.5, delay: 0, usingSpringWithDamping: 1.0, initialSpringVelocity: 1.0, options: .curveEaseInOut, animations: {
                self.transparentView.alpha = 0
-               self.viewTest.frame = CGRect(x: 0, y: screenSize.height, width: screenSize.width, height: self.height)
+               self.child.view.frame = CGRect(x: 0, y: screenSize.height, width: screenSize.width, height: self.height)
            }, completion: nil)
         
         

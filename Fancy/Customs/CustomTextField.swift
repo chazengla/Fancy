@@ -40,14 +40,14 @@ class CustomTextField: UIView{
         
    
         if bolded == true{
-            let attText = NSMutableAttributedString(string: String(placeholder.prefix(3)), attributes: [NSAttributedString.Key.font :  UIFont(name: Constants.futuraPrimary , size: 20)!, NSAttributedString.Key.foregroundColor : Document.black])
-            let attText2 = NSMutableAttributedString(string: String(placeholder.suffix(11)), attributes: [NSAttributedString.Key.font :  UIFont(name: Constants.futuraPrimary , size: 20)!, NSAttributedString.Key.foregroundColor : Document.grey ])
+            let attText = NSMutableAttributedString(string: String(placeholder.prefix(3)), attributes: [NSAttributedString.Key.font :  UIFont(name: Constants.futuraPrimary , size: 20)!, NSAttributedString.Key.foregroundColor : Colors.black])
+            let attText2 = NSMutableAttributedString(string: String(placeholder.suffix(11)), attributes: [NSAttributedString.Key.font :  UIFont(name: Constants.futuraPrimary , size: 20)!, NSAttributedString.Key.foregroundColor : Colors.grey ])
             attText.append(attText2)
             textField.attributedPlaceholder = attText
         }
         
         else{
-            let attText = NSAttributedString(string: placeholder, attributes: [NSAttributedString.Key.font :  UIFont(name: Constants.futuraPrimary , size: 20)!, NSAttributedString.Key.foregroundColor : Document.grey])
+            let attText = NSAttributedString(string: placeholder, attributes: [NSAttributedString.Key.font :  UIFont(name: Constants.futuraPrimary , size: 20)!, NSAttributedString.Key.foregroundColor : Colors.grey])
             textField.attributedPlaceholder = attText
         }
     }

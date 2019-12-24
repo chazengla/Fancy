@@ -18,8 +18,8 @@ class AppTabViewController: UITabBarController {
     
     func setupTabBar(){
         
-        tabBar.tintColor = Document.hotPink
-        tabBar.barTintColor = Document.white
+        tabBar.tintColor = Colors.hotPink
+        tabBar.barTintColor = Colors.white
 //        self.tabBar.itemPositioning = .centered
         
         let homevc = HomeViewController()

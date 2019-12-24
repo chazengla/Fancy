@@ -14,7 +14,7 @@ class CheckoutViewController: UIViewController {
     
     let changeAddressButton : UIButton = {
         let btn = UIButton()
-        let att = NSAttributedString(string: "Change", attributes: [NSAttributedString.Key.font : UIFont(name: Constants.futuraPrimary, size: 20)!, NSAttributedString.Key.foregroundColor : Document.hotPink])
+        let att = NSAttributedString(string: "Change", attributes: [NSAttributedString.Key.font : UIFont(name: Constants.futuraPrimary, size: 20)!, NSAttributedString.Key.foregroundColor : Colors.hotPink])
         btn.setAttributedTitle(att, for: .normal)
         return btn
     }()
@@ -30,7 +30,7 @@ class CheckoutViewController: UIViewController {
     let addressLabel: UILabel = {
         let label = UILabel()
         label.text = "3 Bath St, Flat 13, EC1V 9LB"
-        label.textColor = Document.grey
+        label.textColor = Colors.grey
         label.font = UIFont(name: Constants.futuraPrimary, size: 15)
         return label
     }()
@@ -41,7 +41,7 @@ class CheckoutViewController: UIViewController {
     
     let changePaymentButton : UIButton = {
         let btn = UIButton()
-        let att = NSAttributedString(string: "Change", attributes: [NSAttributedString.Key.font : UIFont(name: Constants.futuraPrimary, size: 20)!, NSAttributedString.Key.foregroundColor : Document.hotPink])
+        let att = NSAttributedString(string: "Change", attributes: [NSAttributedString.Key.font : UIFont(name: Constants.futuraPrimary, size: 20)!, NSAttributedString.Key.foregroundColor : Colors.hotPink])
         btn.setAttributedTitle(att, for: .normal)
         return btn
     }()

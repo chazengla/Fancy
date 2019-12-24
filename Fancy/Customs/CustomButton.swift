@@ -23,7 +23,7 @@ class CustomButton: UIButton{
         
         let attText = NSAttributedString(string: title, attributes: [NSAttributedString.Key.font :  UIFont(name: Constants.futuraBold , size: 15)!, NSAttributedString.Key.foregroundColor : UIColor.white])
         self.setAttributedTitle(attText, for: .normal)
-        self.backgroundColor = Document.hotPink
+        self.backgroundColor = Colors.hotPink
         self.layer.cornerRadius = 15
         self.withSize(.init(width: 270, height: 50))
     }
@@ -48,7 +48,7 @@ class CustomAddButton: UIButton{
         
         let attText = NSAttributedString(string: title, attributes: [NSAttributedString.Key.font :  UIFont(name: Constants.futuraBold , size: 15)!, NSAttributedString.Key.foregroundColor : UIColor.white])
         self.setAttributedTitle(attText, for: .normal)
-        self.backgroundColor = Document.mintGreen
+        self.backgroundColor = Colors.mintGreen
         self.layer.cornerRadius = 7
         self.withHeight(40)
     }
@@ -72,7 +72,7 @@ class CustomButtonGreen: UIButton{
         
         let attText = NSAttributedString(string: title, attributes: [NSAttributedString.Key.font :  UIFont(name: Constants.futuraBold , size: 15)!, NSAttributedString.Key.foregroundColor : UIColor.white])
         self.setAttributedTitle(attText, for: .normal)
-        self.backgroundColor = Document.mintGreen
+        self.backgroundColor = Colors.mintGreen
         self.layer.cornerRadius = 7
         self.withHeight(50)
     }

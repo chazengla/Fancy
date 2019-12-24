@@ -25,7 +25,7 @@ class HomeViewController: UIViewController, UITextFieldDelegate {
         let label = UILabel()
         label.text = "Fancy"
         label.font = UIFont(name: Constants.futuraPrimary, size: 35)
-        label.textColor = Document.hotPink
+        label.textColor = Colors.hotPink
         
         return label
     }()
@@ -41,7 +41,7 @@ class HomeViewController: UIViewController, UITextFieldDelegate {
     
     let addressContainerView: UIView = {
         let view = UIView()
-        view.backgroundColor = Document.grey.withAlphaComponent(0.2)
+        view.backgroundColor = Colors.grey.withAlphaComponent(0.2)
         view.withHeight(50)
         return view
     }()
@@ -50,7 +50,7 @@ class HomeViewController: UIViewController, UITextFieldDelegate {
         let label = UILabel()
         label.text = "Delivering to EC1V 9NQ"
         label.font = UIFont(name: Constants.futuraPrimary, size: 15)
-        label.textColor = Document.black
+        label.textColor = Colors.black
         
         return label
     }()
@@ -60,7 +60,7 @@ class HomeViewController: UIViewController, UITextFieldDelegate {
     let changeButton: UIButton = {
         let btn = UIButton()
         btn.setTitle("Change", for: .normal)
-        let att = NSAttributedString(string: "Change", attributes: [NSAttributedString.Key.font : UIFont(name: Constants.futuraPrimary, size: 15)!, NSAttributedString.Key.foregroundColor : Document.hotPink])
+        let att = NSAttributedString(string: "Change", attributes: [NSAttributedString.Key.font : UIFont(name: Constants.futuraPrimary, size: 15)!, NSAttributedString.Key.foregroundColor : Colors.hotPink])
         btn.setAttributedTitle(att, for: .normal)
         return btn
     }()

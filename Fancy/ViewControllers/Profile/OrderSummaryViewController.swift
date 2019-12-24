@@ -41,7 +41,7 @@ class OrderSummaryViewController: UIViewController {
     let subtotalLabel: UILabel = {
         let label = UILabel()
         label.text = "Subtotal"
-        label.textColor = Document.grey
+        label.textColor = Colors.grey
         label.font = UIFont(name: Constants.futuraPrimary, size: 15)
         return label
     }()
@@ -49,7 +49,7 @@ class OrderSummaryViewController: UIViewController {
     let subtotalValueLabel: UILabel = {
         let label = UILabel()
         label.text = "£2.57"
-        label.textColor = Document.grey
+        label.textColor = Colors.grey
         label.textAlignment = .right
         label.font = UIFont(name: Constants.futuraPrimary, size: 15)
         return label
@@ -58,7 +58,7 @@ class OrderSummaryViewController: UIViewController {
     let deliveryFeeLabel: UILabel = {
         let label = UILabel()
         label.text = "Delivery fee"
-        label.textColor = Document.grey
+        label.textColor = Colors.grey
         label.font = UIFont(name: Constants.futuraPrimary, size: 15)
         return label
     }()
@@ -66,7 +66,7 @@ class OrderSummaryViewController: UIViewController {
     let deliveryFeeValueLabel: UILabel = {
         let label = UILabel()
         label.text = "£3.57"
-        label.textColor = Document.grey
+        label.textColor = Colors.grey
         label.textAlignment = .right
         label.font = UIFont(name: Constants.futuraPrimary, size: 15)
         return label
@@ -75,7 +75,7 @@ class OrderSummaryViewController: UIViewController {
     let serviceFeeLabel: UILabel = {
         let label = UILabel()
         label.text = "Service fee"
-        label.textColor = Document.grey
+        label.textColor = Colors.grey
         label.font = UIFont(name: Constants.futuraPrimary, size: 15)
         return label
     }()
@@ -83,7 +83,7 @@ class OrderSummaryViewController: UIViewController {
     let serviceFeeValueLabel: UILabel = {
         let label = UILabel()
         label.text = "£0.57"
-        label.textColor = Document.grey
+        label.textColor = Colors.grey
         label.textAlignment = .right
         label.font = UIFont(name: Constants.futuraPrimary, size: 15)
         return label
@@ -200,14 +200,18 @@ class SingleOrderListViewController: LBTAListController<OrderCell, _Item>, UICol
     }
     
     
+    
         
         
 }
+
+
 class OrderCell: LBTAListCell<_Item> {
     
-    let quantityLabel = UILabel(text: "1x", font: UIFont(name: Constants.futuraPrimary, size: 15), textColor: Document.grey)
-    let nameLabel = UILabel(text: "Sprite 1L", font: UIFont(name: Constants.futuraPrimary, size: 15), textColor: Document.black)
-    let priceLabel = UILabel(text: "£0.59", font: UIFont(name: Constants.futuraPrimary, size: 15), textColor: Document.black, textAlignment: .right)
+    
+    let quantityLabel = UILabel(text: "1x", font: UIFont(name: Constants.futuraPrimary, size: 15), textColor: Colors.grey)
+    let nameLabel = UILabel(text: "Sprite 1L", font: UIFont(name: Constants.futuraPrimary, size: 15), textColor: Colors.black)
+    let priceLabel = UILabel(text: "£0.59", font: UIFont(name: Constants.futuraPrimary, size: 15), textColor: Colors.black, textAlignment: .right)
     
     
     override var item: _Item! {
@@ -220,9 +224,9 @@ class OrderCell: LBTAListCell<_Item> {
     
     override func setupViews() {
         super.setupViews()
+        
+        
     
-        quantityLabel.withWidth(20)
-        priceLabel.withWidth(75)
         
 
 

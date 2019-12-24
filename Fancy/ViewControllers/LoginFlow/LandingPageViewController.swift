@@ -22,7 +22,7 @@ class LandingPageViewController: UIViewController {
         let label = UILabel()
         label.text = "Fancy"
         label.font = Fonts.titleFont
-        label.textColor = Document.hotPink
+        label.textColor = Colors.hotPink
         
         return label
     }()
@@ -31,7 +31,7 @@ class LandingPageViewController: UIViewController {
         let label = UILabel()
         label.text = "Get snacks delivered in 30 minutes or less"
         label.font = UIFont(name: Constants.futuraPrimary, size: 15)
-        label.textColor = Document.black
+        label.textColor = Colors.black
         
         return label
     }()
@@ -49,7 +49,7 @@ class LandingPageViewController: UIViewController {
         let label = UILabel()
         label.text = "Terms of Service & Privacy Policy"
         label.font = UIFont(name: Constants.futuraPrimary, size: 15)
-        label.textColor = Document.grey
+        label.textColor = Colors.grey
         return label
     }()
     
@@ -57,7 +57,7 @@ class LandingPageViewController: UIViewController {
         let label = UILabel()
         label.text = "Do this later "
         label.font = UIFont(name: Constants.futuraPrimary, size: 15)
-        label.textColor = Document.hotPink
+        label.textColor = Colors.hotPink
         return label
     }()
     

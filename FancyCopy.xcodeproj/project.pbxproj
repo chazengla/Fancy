@@ -35,6 +35,7 @@
 		1F601F712392F52900569FA8 /* SearchResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F601F702392F52900569FA8 /* SearchResultsViewController.swift */; };
 		1F601F732393219C00569FA8 /* ProductPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F601F722393219C00569FA8 /* ProductPageViewController.swift */; };
 		1F601F7623933AEB00569FA8 /* ItemCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F601F7523933AEB00569FA8 /* ItemCollectionViewController.swift */; };
+		1F6808EB23B283D900634C0E /* EditItemQuantityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F6808EA23B283D900634C0E /* EditItemQuantityViewController.swift */; };
 		1FE238C5238C78790065C0F7 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE238C4238C78790065C0F7 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
@@ -67,6 +68,7 @@
 		1F601F702392F52900569FA8 /* SearchResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultsViewController.swift; sourceTree = "<group>"; };
 		1F601F722393219C00569FA8 /* ProductPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductPageViewController.swift; sourceTree = "<group>"; };
 		1F601F7523933AEB00569FA8 /* ItemCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCollectionViewController.swift; sourceTree = "<group>"; };
+		1F6808EA23B283D900634C0E /* EditItemQuantityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditItemQuantityViewController.swift; sourceTree = "<group>"; };
 		1FE238C4238C78790065C0F7 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		1FE238C6238C7BEF0065C0F7 /* Futura.ttc */ = {isa = PBXFileReference; lastKnownFileType = file; path = Futura.ttc; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -135,6 +137,7 @@
 				1F601F722393219C00569FA8 /* ProductPageViewController.swift */,
 				1F3B21B823946E1000058193 /* CartViewController.swift */,
 				1F5C7C1723B255F100C65358 /* EmptyCartViewController.swift */,
+				1F6808EA23B283D900634C0E /* EditItemQuantityViewController.swift */,
 				1F01CA8323AFA9F400AEDF48 /* AddressViewController.swift */,
 				1F01CA8523AFB9D000AEDF48 /* MapViewController.swift */,
 				1F01CA8723AFBC8100AEDF48 /* CheckoutViewController.swift */,
@@ -292,6 +295,7 @@
 				1F4A6F5823789D17000F268D /* OrdersViewController.swift in Sources */,
 				1F5C7C1823B255F100C65358 /* EmptyCartViewController.swift in Sources */,
 				1F3B21B923946E1000058193 /* CartViewController.swift in Sources */,
+				1F6808EB23B283D900634C0E /* EditItemQuantityViewController.swift in Sources */,
 				1F3193852377465500B8122F /* SceneDelegate.swift in Sources */,
 				1FE238C5238C78790065C0F7 /* Constants.swift in Sources */,
 				1F601F7623933AEB00569FA8 /* ItemCollectionViewController.swift in Sources */,
