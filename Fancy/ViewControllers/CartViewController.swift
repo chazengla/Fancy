@@ -11,6 +11,8 @@ import LBTATools
 
 class CartViewController: UIViewController {
 
+    let transparentView = UIView()
+    
     let headerLabel = UILabel(text: "Your order", font: UIFont(name: Constants.futuraPrimary, size: 20), textColor: .black)
     
     let subtotalLabel: UILabel = {
@@ -113,6 +115,7 @@ class CartViewController: UIViewController {
 
     let child = SingleOrderListViewController()
     let child2 = HorizontalItemCollectionViewController(scrollDirection: .horizontal)
+    let viewTest = UIView(backgroundColor: .red)
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -120,6 +123,10 @@ class CartViewController: UIViewController {
         setupViews()
         // Do any additional setup after loading the view.
     }
+    
+//    override func viewDidAppear(_ animated: Bool) {
+//        filterPressed()
+//    }
     
     
     
@@ -174,6 +181,50 @@ class CartViewController: UIViewController {
         vStack.axis = .vertical
         vStack.spacing = 10
     }
+    
+//    let height: CGFloat = 250
+//    
+//    @objc func filterPressed(){
+//        
+//        let window = UIApplication.shared.keyWindow
+//        transparentView.backgroundColor = UIColor.black.withAlphaComponent(0.9)
+//        transparentView.frame = self.view.frame
+//        window?.addSubview(transparentView)
+//
+//        let screenSize = UIScreen.main.bounds.size
+//        child.view.frame = CGRect(x: 0, y: screenSize.height, width: screenSize.width, height: height)
+//        child.view.layer.cornerRadius = 20
+//        child.view.clipsToBounds = true
+//        window?.addSubview(child.view)
+//
+//        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(onClickTransparentView))
+//        transparentView.addGestureRecognizer(tapGesture)
+//
+//        transparentView.alpha = 0
+//
+//        UIView.animate(withDuration: 0.5, delay: 0, usingSpringWithDamping: 1.0, initialSpringVelocity: 1.0, options: .curveEaseInOut, animations: {
+//            self.transparentView.alpha = 0.5
+//            self.child.view.frame = CGRect(x: 0, y: screenSize.height - self.height, width: screenSize.width, height: self.height)
+//        }, completion: nil)
+//
+//        
+//        
+//    }
+//    
+//    //filter button functionality
+//    @objc func onClickTransparentView() {
+//        print("running")
+//           let screenSize = UIScreen.main.bounds.size
+//
+//           UIView.animate(withDuration: 0.5, delay: 0, usingSpringWithDamping: 1.0, initialSpringVelocity: 1.0, options: .curveEaseInOut, animations: {
+//               self.transparentView.alpha = 0
+//               self.child.view.frame = CGRect(x: 0, y: screenSize.height, width: screenSize.width, height: self.height)
+//           }, completion: nil)
+//        
+//        
+//        
+//      
+//       }
     
 
  

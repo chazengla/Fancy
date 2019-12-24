@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import LBTATools
 
 extension UIView{
     
@@ -15,3 +16,12 @@ extension UIView{
         }
     }
 }
+
+extension UIViewController{
+    
+    func goTo(vc: UIViewController){
+        navigationController?.pushViewController(vc, animated: true)
+    }
+}
+
+

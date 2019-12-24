@@ -13,7 +13,7 @@ class ProductPageViewController: UIViewController {
 
     var added: Bool = false
     
-    let itemImage: UIImageView = {
+    let itemImageView: UIImageView = {
         let img = UIImageView()
         img.backgroundColor = Document.grey
         img.image = UIImage(named: "crisp")
@@ -25,21 +25,18 @@ class ProductPageViewController: UIViewController {
     
     let imageContainer: UIView = {
         let container = UIView()
-        container.backgroundColor = Document.grey.withAlphaComponent(0.1)
+        container.backgroundColor = Document.white
         return container
     }()
     
     let itemContainer: UIView = {
         let container = UIView()
-        container.backgroundColor = .white
+        container.backgroundColor = Document.white
         return container
     }()
     
-    let seperator: UIView = {
-        let seperator = UIView()
-        seperator.backgroundColor = Document.grey.withAlphaComponent(0.5)
-        return seperator
-    }()
+    let seperator = Seperator()
+    let seperator1 = Seperator()
 
     
     let itemNameLabel: UILabel = {
@@ -70,10 +67,14 @@ class ProductPageViewController: UIViewController {
 
     
     
+    override func viewWillAppear(_ animated: Bool) {
+        setupNav()
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        
         setupViews()
         setupTargets()
         
@@ -84,39 +85,50 @@ class ProductPageViewController: UIViewController {
     }
     
     @objc func addToCartButtonPressed(){
-        print("Added")
+        print("added")
 
     }
     
+    func setupNav(){
+        navigationController?.navigationBar.isHidden = false
+        navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage.init(named: "backArrow"), style: .plain, target: self, action: #selector(goBack))
+        
+    }
     
     func setupViews(){
         
         view.backgroundColor = .white
         
-        view.addSubviews(imageContainer, seperator, child.view, headerLabel, itemContainer)
-        imageContainer.addSubview(itemImage)
+        view.addSubviews(imageContainer, itemContainer, seperator, seperator1, child.view, headerLabel)
+        
+        imageContainer.addSubview(itemImageView)
         
         
         
         imageContainer.anchor(top: view.safeAreaLayoutGuide.topAnchor, leading: view.leadingAnchor, bottom: view.bottomAnchor, trailing: view.trailingAnchor, padding: .init(top: 0, left: 0, bottom: view.frame.height/2, right: 0))
-        itemImage.fillSuperview(padding: .init(top: 50, left: 50, bottom: 50, right: 50))
+        
+        itemImageView.fillSuperview(padding: .init(top: 50, left: 50, bottom: 50, right: 50))
+        
+
 
         
         itemContainer.anchor(top: imageContainer.bottomAnchor, leading: view.leadingAnchor, bottom: nil, trailing: view.trailingAnchor)
         itemContainer.withHeight(100)
+    itemContainer.addSubviews(itemNameLabel,itemPriceLabel,addToCartButton)
         
-        
-        itemContainer.addSubviews(itemNameLabel,itemPriceLabel,addToCartButton)
-        
-        itemNameLabel.anchor(top: itemContainer.topAnchor, leading: view.leadingAnchor, bottom: nil, trailing: view.trailingAnchor, padding: .init(top: 20, left: 25, bottom: 0, right: 0))
+        itemNameLabel.anchor(top: itemContainer.topAnchor, leading: view.leadingAnchor, bottom: nil, trailing: nil, padding: .init(top: 20, left: 25, bottom: 0, right: 0))
+        itemNameLabel.withWidth(view.frame.width*0.55)
         itemPriceLabel.anchor(top: itemNameLabel.bottomAnchor, leading: view.leadingAnchor, bottom: nil, trailing: view.trailingAnchor, padding: .init(top: 0, left: 25, bottom: 0, right: 0))
         
         
         addToCartButton.anchor(top: itemContainer.topAnchor, leading: nil, bottom: nil, trailing: view.trailingAnchor, padding: .init(top: 20, left: 0, bottom: 0, right: 25))
         addToCartButton.withWidth(120)
         
-        seperator.anchor(top: itemContainer.bottomAnchor, leading: view.leadingAnchor, bottom: nil, trailing: view.trailingAnchor)
-        seperator.withHeight(1)
+        seperator.anchor(top: imageContainer.bottomAnchor, leading: view.leadingAnchor, bottom: nil, trailing: view.trailingAnchor)
+        
+        seperator1.anchor(top: itemContainer.bottomAnchor, leading: view.leadingAnchor, bottom: nil, trailing: view.trailingAnchor)
+        
+        
         
         
         headerLabel.anchor(top: itemContainer.bottomAnchor, leading: view.leadingAnchor, bottom: nil, trailing: view.trailingAnchor, padding: .init(top: 30, left: 20, bottom: 0, right: 0))

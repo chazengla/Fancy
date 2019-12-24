@@ -23,6 +23,7 @@ class EnterPhoneViewController: UIViewController {
     
     let phoneNumberTextField = CustomTextField(placeholder: "+44 7955789831", bolded: true)
     
+    let errorMessage = ErrorMessageLabel(text: "Please enter a correct phone number.")
 //    let phoneNumberTextField = UITextField(placeholder: "Something")
     
     let nextButton: CustomButton = {
@@ -42,10 +43,13 @@ class EnterPhoneViewController: UIViewController {
         
 
         view.backgroundColor = .white
-        view.addSubviews(intructionsLabel, phoneNumberTextField, nextButton)
+        view.addSubviews(intructionsLabel, phoneNumberTextField, nextButton, errorMessage)
         
         phoneNumberTextField.centerYToSuperview()
         phoneNumberTextField.anchor(top: nil, leading: view.leadingAnchor, bottom: nil, trailing: view.trailingAnchor, padding: .init(top: 0, left: 55, bottom: 0, right: 55))
+        
+        errorMessage.anchor(top: phoneNumberTextField.bottomAnchor, leading: view.leadingAnchor, bottom: nil, trailing: view.trailingAnchor, padding: .init(top: 10, left: 0, bottom: 0, right: 0))
+        
         intructionsLabel.centerXToSuperview()
         intructionsLabel.anchor(top: nil, leading: nil, bottom: phoneNumberTextField.topAnchor, trailing: nil, padding: .init(top: 0, left: 0, bottom: 70, right: 0))
         nextButton.centerXToSuperview()

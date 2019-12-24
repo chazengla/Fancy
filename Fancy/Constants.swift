@@ -24,6 +24,19 @@ struct Constants {
     static let futuraBold = "Futura-Bold"
 }
 
+struct Fonts{
+    static let titleFont = UIFont(name: "Futura-Medium", size: 25)
+    static let futuraBold20 = UIFont(name: "Futura-Bold", size: 20)
+    static let futuraMedium20 = UIFont(name: "Futura-Medium", size: 20)
+    static let futuraBold15 = UIFont(name: "Futura-Bold", size: 15)
+    static let futuraMedium15 = UIFont(name: "Futura-Medium", size: 15)
+    static let futuraBold13 = UIFont(name: "Futura-Bold", size: 13)
+    static let futuraMedium13 = UIFont(name: "Futura-Medium", size: 13)
+    static let futuraBold12 = UIFont(name: "Futura-Bold", size: 12)
+    static let futuraMedium12 = UIFont(name: "Futura-Medium", size: 12)
+
+}
+
 
 
 

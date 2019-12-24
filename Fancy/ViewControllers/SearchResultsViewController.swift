@@ -47,6 +47,8 @@ class SearchResultsViewController: LBTAListHeaderController<IndividualItemCell, 
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        print(headerTitle)
+        
         collectionView.register(SearchHeaderCell.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: supplementaryViewId)
         
         navigationItem.title = "Results"
@@ -117,16 +119,17 @@ class SearchResultsViewController: LBTAListHeaderController<IndividualItemCell, 
     }
     
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        
+        goTo(vc: ProductPageViewController())
     
     }
+    
+   
     
     
     
 
     func setupNav(){
         navigationController?.navigationBar.isHidden = false
-        self.title = "Results"
         navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage.init(named: "backArrow"), style: .plain, target: self, action: #selector(goBack))
         
     }

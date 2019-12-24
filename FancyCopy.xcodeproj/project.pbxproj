@@ -30,6 +30,8 @@
 		1F4A6F5823789D17000F268D /* OrdersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A6F5723789D17000F268D /* OrdersViewController.swift */; };
 		1F4A6F5A2378A930000F268D /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A6F592378A930000F268D /* SettingsViewController.swift */; };
 		1F4A6F5C2378BBF8000F268D /* OrderSummaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F4A6F5B2378BBF8000F268D /* OrderSummaryViewController.swift */; };
+		1F5C7C1623B2331200C65358 /* CustomLabels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5C7C1523B2331100C65358 /* CustomLabels.swift */; };
+		1F5C7C1823B255F100C65358 /* EmptyCartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F5C7C1723B255F100C65358 /* EmptyCartViewController.swift */; };
 		1F601F712392F52900569FA8 /* SearchResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F601F702392F52900569FA8 /* SearchResultsViewController.swift */; };
 		1F601F732393219C00569FA8 /* ProductPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F601F722393219C00569FA8 /* ProductPageViewController.swift */; };
 		1F601F7623933AEB00569FA8 /* ItemCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F601F7523933AEB00569FA8 /* ItemCollectionViewController.swift */; };
@@ -60,6 +62,8 @@
 		1F4A6F5723789D17000F268D /* OrdersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrdersViewController.swift; sourceTree = "<group>"; };
 		1F4A6F592378A930000F268D /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		1F4A6F5B2378BBF8000F268D /* OrderSummaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderSummaryViewController.swift; sourceTree = "<group>"; };
+		1F5C7C1523B2331100C65358 /* CustomLabels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLabels.swift; sourceTree = "<group>"; };
+		1F5C7C1723B255F100C65358 /* EmptyCartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyCartViewController.swift; sourceTree = "<group>"; };
 		1F601F702392F52900569FA8 /* SearchResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchResultsViewController.swift; sourceTree = "<group>"; };
 		1F601F722393219C00569FA8 /* ProductPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductPageViewController.swift; sourceTree = "<group>"; };
 		1F601F7523933AEB00569FA8 /* ItemCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCollectionViewController.swift; sourceTree = "<group>"; };
@@ -130,6 +134,7 @@
 				1F601F702392F52900569FA8 /* SearchResultsViewController.swift */,
 				1F601F722393219C00569FA8 /* ProductPageViewController.swift */,
 				1F3B21B823946E1000058193 /* CartViewController.swift */,
+				1F5C7C1723B255F100C65358 /* EmptyCartViewController.swift */,
 				1F01CA8323AFA9F400AEDF48 /* AddressViewController.swift */,
 				1F01CA8523AFB9D000AEDF48 /* MapViewController.swift */,
 				1F01CA8723AFBC8100AEDF48 /* CheckoutViewController.swift */,
@@ -155,6 +160,7 @@
 				1F319398237746BA00B8122F /* CustomButton.swift */,
 				1F31939F237755E200B8122F /* CustomTextField.swift */,
 				1F3B21BA239478F700058193 /* CustomViews.swift */,
+				1F5C7C1523B2331100C65358 /* CustomLabels.swift */,
 			);
 			path = Customs;
 			sourceTree = "<group>";
@@ -275,6 +281,7 @@
 				1F3B21BB239478F700058193 /* CustomViews.swift in Sources */,
 				1F3193A223775BEF00B8122F /* ConfirmPhoneViewController.swift in Sources */,
 				1F3193A723776E3200B8122F /* HomeViewController.swift in Sources */,
+				1F5C7C1623B2331200C65358 /* CustomLabels.swift in Sources */,
 				1F01CA8623AFB9D000AEDF48 /* MapViewController.swift in Sources */,
 				1F01CA8823AFBC8100AEDF48 /* CheckoutViewController.swift in Sources */,
 				1F319399237746BA00B8122F /* CustomButton.swift in Sources */,
@@ -283,6 +290,7 @@
 				1F601F712392F52900569FA8 /* SearchResultsViewController.swift in Sources */,
 				1F4A6F5A2378A930000F268D /* SettingsViewController.swift in Sources */,
 				1F4A6F5823789D17000F268D /* OrdersViewController.swift in Sources */,
+				1F5C7C1823B255F100C65358 /* EmptyCartViewController.swift in Sources */,
 				1F3B21B923946E1000058193 /* CartViewController.swift in Sources */,
 				1F3193852377465500B8122F /* SceneDelegate.swift in Sources */,
 				1FE238C5238C78790065C0F7 /* Constants.swift in Sources */,

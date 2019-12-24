@@ -55,14 +55,17 @@ class HomeViewController: UIViewController, UITextFieldDelegate {
         return label
     }()
     
-    let changeLabel: UILabel = {
-        let label = UILabel()
-        label.text = "Change"
-        label.font = UIFont(name: Constants.futuraPrimary, size: 15)
-        label.textColor = Document.hotPink
-        
-        return label
+    let errorMessage = ErrorMessageLabel(text: "Sorry, we do not deliver to this address.")
+    
+    let changeButton: UIButton = {
+        let btn = UIButton()
+        btn.setTitle("Change", for: .normal)
+        let att = NSAttributedString(string: "Change", attributes: [NSAttributedString.Key.font : UIFont(name: Constants.futuraPrimary, size: 15)!, NSAttributedString.Key.foregroundColor : Document.hotPink])
+        btn.setAttributedTitle(att, for: .normal)
+        return btn
     }()
+    
+    
     
     let containerView = UIView(backgroundColor: .red)
     
@@ -79,17 +82,26 @@ class HomeViewController: UIViewController, UITextFieldDelegate {
         super.viewDidLoad()
         
         setupViews()
+        setupTargets()
         
         
     }
     
-    
-    func textFieldDidBeginEditing(_ textField: UITextField) {
-
-        let paraStyle: NSParagraphStyle = NSParagraphStyle()
-        textField.typingAttributes = [NSAttributedString.Key.foregroundColor : UIColor.black,
-                                      NSAttributedString.Key.paragraphStyle : paraStyle, NSAttributedString.Key.font : UIFont.init(name: Constants.futuraPrimary , size: 15)!]
+    func setupTargets(){
+        changeButton.addTarget(self, action: #selector(changeButtonPressed), for: .touchUpInside)
     }
+    
+    @objc func changeButtonPressed(){
+        goTo(vc: AddressViewController())
+    }
+    
+    
+//    func textFieldDidBeginEditing(_ textField: UITextField) {
+//
+//        let paraStyle: NSParagraphStyle = NSParagraphStyle()
+//        textField.typingAttributes = [NSAttributedString.Key.foregroundColor : UIColor.black,
+//                                      NSAttributedString.Key.paragraphStyle : paraStyle, NSAttributedString.Key.font : UIFont.init(name: Constants.futuraPrimary , size: 15)!]
+//    }
     
     
         
@@ -99,9 +111,9 @@ class HomeViewController: UIViewController, UITextFieldDelegate {
         view.backgroundColor = .white
        
         addChild(child)
-        view.addSubviews(logoLabelStackView, addressContainerView, child.view)
+        view.addSubviews(logoLabelStackView, addressContainerView, child.view, errorMessage)
         
-        addressContainerView.addSubviews(addressLabel, changeLabel)
+        addressContainerView.addSubviews(addressLabel, changeButton)
         
         
         logoLabelStackView.anchor(top: view.topAnchor, leading: view.leadingAnchor, bottom: nil, trailing: nil, padding: .init(top: 50, left: 30, bottom: 0, right: 0))
@@ -112,10 +124,13 @@ class HomeViewController: UIViewController, UITextFieldDelegate {
         addressLabel.centerYToSuperview()
         addressLabel.anchor(top: nil, leading: view.leadingAnchor, bottom: nil, trailing: nil, padding: .init(top: 0, left: 30, bottom: 0, right: 0))
         
-        changeLabel.centerYToSuperview()
-        changeLabel.anchor(top: nil, leading: nil, bottom: nil, trailing: view.trailingAnchor, padding: .init(top: 0, left: 0, bottom: 0, right: 30))
+        errorMessage.anchor(top: addressContainerView.bottomAnchor, leading: view.leadingAnchor, bottom: nil, trailing: view.trailingAnchor, padding: .init(top: 20, left: 0, bottom: 0, right: 0))
         
-        child.view.anchor(top: changeLabel.bottomAnchor, leading: view.leadingAnchor, bottom: view.bottomAnchor, trailing: view.trailingAnchor, padding: .init(top: 10, left: 0, bottom: 0, right: 10))
+        
+        changeButton.centerYToSuperview()
+        changeButton.anchor(top: nil, leading: nil, bottom: nil, trailing: view.trailingAnchor, padding: .init(top: 0, left: 0, bottom: 0, right: 30))
+        
+        child.view.anchor(top: changeButton.bottomAnchor, leading: view.leadingAnchor, bottom: view.bottomAnchor, trailing: view.trailingAnchor, padding: .init(top: 40, left: 0, bottom: 0, right: 10))
         
         
         
@@ -186,8 +201,13 @@ class CardViewController: LBTAListController<ItemCell, Item>, UICollectionViewDe
     }
     
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        print("Selected")
-        goTo(vc: SearchResultsViewController())
+        
+        let cell = collectionView.cellForItem(at: indexPath) as! ItemCell
+        let searchVc = SearchResultsViewController()
+        print(cell.itemLabel.text)
+        searchVc.headerTitle = cell.itemLabel.text!
+        
+        goTo(vc: searchVc)
     }
     
     

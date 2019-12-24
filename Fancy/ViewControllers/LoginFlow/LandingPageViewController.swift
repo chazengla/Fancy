@@ -21,7 +21,7 @@ class LandingPageViewController: UIViewController {
     let fancyLabel: UILabel = {
         let label = UILabel()
         label.text = "Fancy"
-        label.font = UIFont(name: Constants.futuraPrimary, size: 35)
+        label.font = Fonts.titleFont
         label.textColor = Document.hotPink
         
         return label

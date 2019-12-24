@@ -15,7 +15,6 @@ class CustomTextField: UIView{
     let textField: UITextField = {
         let tf = UITextField()
         tf.textAlignment = .center
-        tf.backgroundColor = .red
         return tf
     }()
     
@@ -42,13 +41,13 @@ class CustomTextField: UIView{
    
         if bolded == true{
             let attText = NSMutableAttributedString(string: String(placeholder.prefix(3)), attributes: [NSAttributedString.Key.font :  UIFont(name: Constants.futuraPrimary , size: 20)!, NSAttributedString.Key.foregroundColor : Document.black])
-            let attText2 = NSMutableAttributedString(string: String(placeholder.suffix(11)), attributes: [NSAttributedString.Key.font :  UIFont(name: Constants.futuraPrimary , size: 20)!])
+            let attText2 = NSMutableAttributedString(string: String(placeholder.suffix(11)), attributes: [NSAttributedString.Key.font :  UIFont(name: Constants.futuraPrimary , size: 20)!, NSAttributedString.Key.foregroundColor : Document.grey ])
             attText.append(attText2)
             textField.attributedPlaceholder = attText
         }
         
         else{
-            let attText = NSAttributedString(string: placeholder, attributes: [NSAttributedString.Key.font :  UIFont(name: Constants.futuraPrimary , size: 20)!])
+            let attText = NSAttributedString(string: placeholder, attributes: [NSAttributedString.Key.font :  UIFont(name: Constants.futuraPrimary , size: 20)!, NSAttributedString.Key.foregroundColor : Document.grey])
             textField.attributedPlaceholder = attText
         }
     }

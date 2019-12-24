@@ -54,13 +54,10 @@ class HorizontalItemCollectionViewController: LBTAListController<IndividualItemC
 
 
 
-
-
-
 class IndividualItemCell: LBTAListCell<IndividualItem> {
     
-    let itemLabel = UILabel(text: "ADD", font: UIFont(name: Constants.futuraBold, size: 15), textColor: .white, textAlignment: .center)
-    let bottomView = UIView(backgroundColor: Document.mintGreen)
+    let itemLabel = UILabel(text: "£2.99", font: Fonts.futuraMedium12, textColor: .white, textAlignment: .center)
+    let bottomView = UIView(backgroundColor: Document.hotPink)
     
     
 //    override var item: IndividualItem! {
@@ -74,8 +71,12 @@ class IndividualItemCell: LBTAListCell<IndividualItem> {
         
         layer.borderColor = Document.grey.cgColor
         layer.borderWidth = 1
-        layer.cornerRadius = 10
+        layer.cornerRadius = 5
         clipsToBounds = true
+        
+        bottomView.layer.borderColor = Document.hotPink.cgColor
+        bottomView.layer.borderWidth = 1
+
         
         
         addSubview(bottomView)
@@ -86,6 +87,37 @@ class IndividualItemCell: LBTAListCell<IndividualItem> {
         itemLabel.centerInSuperview()
     }
 }
+
+////Version 2 with add button
+//class IndividualItemCell: LBTAListCell<IndividualItem> {
+//
+//    let itemLabel = UILabel(text: "ADD", font: UIFont(name: Constants.futuraBold, size: 15), textColor: .white, textAlignment: .center)
+//    let bottomView = UIView(backgroundColor: Document.mintGreen)
+//
+//
+////    override var item: IndividualItem! {
+////        didSet {
+////            itemLabel.text = item.text
+////        }
+////    }
+//
+//    override func setupViews() {
+//        super.setupViews()
+//
+//        layer.borderColor = Document.grey.cgColor
+//        layer.borderWidth = 1
+//        layer.cornerRadius = 10
+//        clipsToBounds = true
+//
+//
+//        addSubview(bottomView)
+//        bottomView.addSubview(itemLabel)
+//        bottomView.constrainHeight(30)
+//
+//        bottomView.anchor(top: nil, leading: self.leadingAnchor, bottom: self.bottomAnchor, trailing: self.trailingAnchor, padding: .init(top: 0, left: 0, bottom: 0, right: 0))
+//        itemLabel.centerInSuperview()
+//    }
+//}
 
 struct IndividualItem {
     let text: String

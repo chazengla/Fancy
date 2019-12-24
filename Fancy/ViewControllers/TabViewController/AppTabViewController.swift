@@ -18,14 +18,19 @@ class AppTabViewController: UITabBarController {
     
     func setupTabBar(){
         
-        let homevc = HomeViewController()
-        homevc.title = "Home"
+        tabBar.tintColor = Document.hotPink
+        tabBar.barTintColor = Document.white
+//        self.tabBar.itemPositioning = .centered
         
-        let cartvc = CartViewController()
-        cartvc.title = "Cart"
+        let homevc = HomeViewController()
+        homevc.tabBarItem.image = UIImage(named: "home")
+        homevc.title = nil
+        
+        let cartvc = EmptyCartViewController()
+        cartvc.tabBarItem.image = UIImage(named: "cart")
         
         let profilevc = ProfilePageViewController()
-        profilevc.title = "Profile"
+        profilevc.tabBarItem.image = UIImage(named: "profile")
         
         viewControllers = [homevc, cartvc, profilevc]
     }

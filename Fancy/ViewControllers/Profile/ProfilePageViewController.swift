@@ -93,7 +93,7 @@ class ProfileListItemCell: LBTAListCell<ProfileListItem> {
 
 struct ProfileListItem {
     let label: String
-    let viewController: UIViewController
+    let viewController: UIViewController?
 }
 
 
@@ -105,9 +105,13 @@ class ProfilePageTableView: LBTAListController<ProfileListItemCell, ProfileListI
 
         items = [
             .init(label: "Orders", viewController: OrdersViewController()),
-            .init(label: "Settings", viewController: SettingsViewController())
+            .init(label: "Settings", viewController: SettingsViewController()),
+            .init(label: "Credit: 20", viewController: nil),
+            .init(label: "Log out", viewController: nil)
         ]
     }
+    
+
         
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         
@@ -121,19 +125,18 @@ class ProfilePageTableView: LBTAListController<ProfileListItemCell, ProfileListI
     }
     
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        goTo(vc: items[indexPath.row].viewController)
+        if let vc = items[indexPath.row].viewController{
+            goTo(vc: vc)
+        }
+        if(items[indexPath.row].label == "Log out"){
+            goTo(vc: LandingPageViewController())
+        }
     }
         
         
     
 }
     
-extension UIViewController{
-    
-    func goTo(vc: UIViewController){
-        navigationController?.pushViewController(vc, animated: true)
-    }
-}
 
 
 

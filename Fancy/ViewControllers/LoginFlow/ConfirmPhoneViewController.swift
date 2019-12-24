@@ -32,7 +32,9 @@ class ConfirmPageViewController: UIViewController {
     
     let enterCodeTextField = CustomTextField(placeholder: "Enter the code here", bolded: false)
     
-    let confirmButton: CustomButton = {
+    let errorMessage = ErrorMessageLabel(text: "Please enter a correct phone number.")
+    
+    let nextButton: CustomButton = {
         let button = CustomButton(title: "Next")
         return button
     }()
@@ -57,10 +59,12 @@ class ConfirmPageViewController: UIViewController {
     func setupViews(){
         view.backgroundColor = .white
         
-        view.addSubviews(enterCodeLabel, phoneNumberLabel, enterCodeTextField, confirmButton, resendCodeLabel)
+        view.addSubviews(enterCodeLabel, phoneNumberLabel, enterCodeTextField, errorMessage, nextButton, resendCodeLabel)
         
         enterCodeTextField.centerYToSuperview()
         enterCodeTextField.anchor(top: nil, leading: view.leadingAnchor, bottom: nil, trailing: view.trailingAnchor, padding: .init(top: 0, left: 55, bottom: 0, right: 55))
+        
+        errorMessage.anchor(top: enterCodeTextField.bottomAnchor, leading: view.leadingAnchor, bottom: nil, trailing: view.trailingAnchor, padding: .init(top: 10, left: 0, bottom: 0, right: 0))
         
         phoneNumberLabel.centerXToSuperview()
         phoneNumberLabel.anchor(top: nil, leading: nil, bottom: enterCodeTextField.topAnchor, trailing: nil, padding: .init(top: 0, left: 0, bottom: 85, right: 0))
@@ -68,11 +72,11 @@ class ConfirmPageViewController: UIViewController {
         enterCodeLabel.centerXToSuperview()
         enterCodeLabel.anchor(top: nil, leading: nil, bottom: phoneNumberLabel.topAnchor, trailing: nil, padding: .init(top: 0, left: 0, bottom: 20, right: 0))
         
-        confirmButton.centerXToSuperview()
-        confirmButton.anchor(top: enterCodeTextField.bottomAnchor, leading: nil, bottom: nil, trailing: nil, padding: .init(top: 60, left: 0, bottom: 0, right: 0))
+        nextButton.centerXToSuperview()
+        nextButton.anchor(top: enterCodeTextField.bottomAnchor, leading: nil, bottom: nil, trailing: nil, padding: .init(top: 60, left: 0, bottom: 0, right: 0))
         
         resendCodeLabel.centerXToSuperview()
-        resendCodeLabel.anchor(top: confirmButton.bottomAnchor, leading: nil, bottom: nil, trailing: nil, padding: .init(top: 30, left: 0, bottom: 0, right: 0))
+        resendCodeLabel.anchor(top: nextButton.bottomAnchor, leading: nil, bottom: nil, trailing: nil, padding: .init(top: 30, left: 0, bottom: 0, right: 0))
     }
     
     
@@ -84,11 +88,11 @@ class ConfirmPageViewController: UIViewController {
 
     
     func setupTargets(){
-        confirmButton.addTarget(self, action: #selector(moveToNext), for: .touchUpInside)
+        nextButton.addTarget(self, action: #selector(moveToNext), for: .touchUpInside)
     }
     
     @objc func moveToNext(){
-        navigationController?.pushViewController(AppTabViewController(), animated: true)
+        goTo(vc: AppTabViewController())
     }
    
 
