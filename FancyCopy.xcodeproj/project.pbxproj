@@ -11,7 +11,7 @@
 		1F01CA8423AFA9F400AEDF48 /* AddressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F01CA8323AFA9F400AEDF48 /* AddressViewController.swift */; };
 		1F01CA8623AFB9D000AEDF48 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F01CA8523AFB9D000AEDF48 /* MapViewController.swift */; };
 		1F01CA8823AFBC8100AEDF48 /* CheckoutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F01CA8723AFBC8100AEDF48 /* CheckoutViewController.swift */; };
-		1F01CA8B23B00F6F00AEDF48 /* SwiftyJSON in Frameworks */ = {isa = PBXBuildFile; productRef = 1F01CA8A23B00F6F00AEDF48 /* SwiftyJSON */; };
+		1F01CA8B23B00F6F00AEDF48 /* BuildFile in Frameworks */ = {isa = PBXBuildFile; productRef = 1F01CA8A23B00F6F00AEDF48 /* SwiftPackageProductDependency */; };
 		1F09FF582393C6F60020AB5E /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F09FF572393C6F60020AB5E /* Extensions.swift */; };
 		1F2EB47C23788AC500176B00 /* ProfilePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F2EB47B23788AC500176B00 /* ProfilePageViewController.swift */; };
 		1F3193832377465500B8122F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3193822377465500B8122F /* AppDelegate.swift */; };
@@ -19,7 +19,7 @@
 		1F3193872377465500B8122F /* LandingPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3193862377465500B8122F /* LandingPageViewController.swift */; };
 		1F31938F2377465700B8122F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F31938D2377465700B8122F /* LaunchScreen.storyboard */; };
 		1F319399237746BA00B8122F /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F319398237746BA00B8122F /* CustomButton.swift */; };
-		1F31939C2377470C00B8122F /* LBTATools in Frameworks */ = {isa = PBXBuildFile; productRef = 1F31939B2377470C00B8122F /* LBTATools */; };
+		1F31939C2377470C00B8122F /* BuildFile in Frameworks */ = {isa = PBXBuildFile; productRef = 1F31939B2377470C00B8122F /* SwiftPackageProductDependency */; };
 		1F31939E237753FF00B8122F /* EnterPhoneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F31939D237753FF00B8122F /* EnterPhoneViewController.swift */; };
 		1F3193A0237755E200B8122F /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F31939F237755E200B8122F /* CustomTextField.swift */; };
 		1F3193A223775BEF00B8122F /* ConfirmPhoneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3193A123775BEF00B8122F /* ConfirmPhoneViewController.swift */; };
@@ -34,6 +34,8 @@
 		1F601F732393219C00569FA8 /* ProductPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F601F722393219C00569FA8 /* ProductPageViewController.swift */; };
 		1F601F7623933AEB00569FA8 /* ItemCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F601F7523933AEB00569FA8 /* ItemCollectionViewController.swift */; };
 		1FE238C5238C78790065C0F7 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FE238C4238C78790065C0F7 /* Constants.swift */; };
+		2D9787BB23B24BCE0065AEE1 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2D9787BA23B24BCE0065AEE1 /* GoogleService-Info.plist */; };
+		4DB4EC010D5899EB7C9BC95C /* Pods_FancyCopy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8038A81E69E05F4944435CE7 /* Pods_FancyCopy.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -65,6 +67,10 @@
 		1F601F7523933AEB00569FA8 /* ItemCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCollectionViewController.swift; sourceTree = "<group>"; };
 		1FE238C4238C78790065C0F7 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		1FE238C6238C7BEF0065C0F7 /* Futura.ttc */ = {isa = PBXFileReference; lastKnownFileType = file; path = Futura.ttc; sourceTree = "<group>"; };
+		2744B4D355D3329BBF9EB9EA /* Pods-FancyCopy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FancyCopy.release.xcconfig"; path = "Target Support Files/Pods-FancyCopy/Pods-FancyCopy.release.xcconfig"; sourceTree = "<group>"; };
+		2D9787BA23B24BCE0065AEE1 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		8038A81E69E05F4944435CE7 /* Pods_FancyCopy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FancyCopy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1894C617AC69E4CD4D27A6F /* Pods-FancyCopy.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FancyCopy.debug.xcconfig"; path = "Target Support Files/Pods-FancyCopy/Pods-FancyCopy.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,8 +78,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1F01CA8B23B00F6F00AEDF48 /* SwiftyJSON in Frameworks */,
-				1F31939C2377470C00B8122F /* LBTATools in Frameworks */,
+				1F01CA8B23B00F6F00AEDF48 /* BuildFile in Frameworks */,
+				1F31939C2377470C00B8122F /* BuildFile in Frameworks */,
+				4DB4EC010D5899EB7C9BC95C /* Pods_FancyCopy.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,6 +102,8 @@
 			children = (
 				1F3193812377465500B8122F /* Fancy */,
 				1F3193802377465500B8122F /* Products */,
+				91FEEDD287BA67B0AECDC7FA /* Pods */,
+				2D92F247DA773ED107D84D47 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -116,6 +125,7 @@
 				1F09FF572393C6F60020AB5E /* Extensions.swift */,
 				1FE238C6238C7BEF0065C0F7 /* Futura.ttc */,
 				1F31938D2377465700B8122F /* LaunchScreen.storyboard */,
+				2D9787BA23B24BCE0065AEE1 /* GoogleService-Info.plist */,
 				1F3193902377465700B8122F /* Info.plist */,
 				1F01CA3323AE95B800AEDF48 /* Assets.xcassets */,
 			);
@@ -186,6 +196,24 @@
 			path = "Re-usable Collection Views";
 			sourceTree = "<group>";
 		};
+		2D92F247DA773ED107D84D47 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8038A81E69E05F4944435CE7 /* Pods_FancyCopy.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		91FEEDD287BA67B0AECDC7FA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F1894C617AC69E4CD4D27A6F /* Pods-FancyCopy.debug.xcconfig */,
+				2744B4D355D3329BBF9EB9EA /* Pods-FancyCopy.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -193,9 +221,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1F3193932377465700B8122F /* Build configuration list for PBXNativeTarget "FancyCopy" */;
 			buildPhases = (
+				21137BC621E1FB9318C121EE /* [CP] Check Pods Manifest.lock */,
 				1F31937B2377465500B8122F /* Sources */,
 				1F31937C2377465500B8122F /* Frameworks */,
 				1F31937D2377465500B8122F /* Resources */,
+				33FF80731DC04484FA1E9D0D /* [CP] Embed Pods Frameworks */,
+				491396927319BC5FA4EA595E /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -203,8 +234,8 @@
 			);
 			name = FancyCopy;
 			packageProductDependencies = (
-				1F31939B2377470C00B8122F /* LBTATools */,
-				1F01CA8A23B00F6F00AEDF48 /* SwiftyJSON */,
+				1F31939B2377470C00B8122F /* SwiftPackageProductDependency */,
+				1F01CA8A23B00F6F00AEDF48 /* SwiftPackageProductDependency */,
 			);
 			productName = Fancy;
 			productReference = 1F31937F2377465500B8122F /* FancyCopyCopy.app */;
@@ -235,8 +266,8 @@
 			);
 			mainGroup = 1F3193762377465500B8122F;
 			packageReferences = (
-				1F31939A2377470C00B8122F /* XCRemoteSwiftPackageReference "LBTATools" */,
-				1F01CA8923B00F6F00AEDF48 /* XCRemoteSwiftPackageReference "SwiftyJSON" */,
+				1F31939A2377470C00B8122F /* RemoteSwiftPackageReference */,
+				1F01CA8923B00F6F00AEDF48 /* RemoteSwiftPackageReference */,
 			);
 			productRefGroup = 1F3193802377465500B8122F /* Products */;
 			projectDirPath = "";
@@ -254,10 +285,70 @@
 			files = (
 				1F01CA3423AE95B800AEDF48 /* Assets.xcassets in Resources */,
 				1F31938F2377465700B8122F /* LaunchScreen.storyboard in Resources */,
+				2D9787BB23B24BCE0065AEE1 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		21137BC621E1FB9318C121EE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FancyCopy-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		33FF80731DC04484FA1E9D0D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FancyCopy/Pods-FancyCopy-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FancyCopy/Pods-FancyCopy-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FancyCopy/Pods-FancyCopy-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		491396927319BC5FA4EA595E /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FancyCopy/Pods-FancyCopy-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FancyCopy/Pods-FancyCopy-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FancyCopy/Pods-FancyCopy-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		1F31937B2377465500B8122F /* Sources */ = {
@@ -420,6 +511,7 @@
 		};
 		1F3193942377465700B8122F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F1894C617AC69E4CD4D27A6F /* Pods-FancyCopy.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -438,6 +530,7 @@
 		};
 		1F3193952377465700B8122F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2744B4D355D3329BBF9EB9EA /* Pods-FancyCopy.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -478,7 +571,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		1F01CA8923B00F6F00AEDF48 /* XCRemoteSwiftPackageReference "SwiftyJSON" */ = {
+		1F01CA8923B00F6F00AEDF48 /* RemoteSwiftPackageReference */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SwiftyJSON/SwiftyJSON";
 			requirement = {
@@ -486,7 +579,7 @@
 				minimumVersion = 5.0.0;
 			};
 		};
-		1F31939A2377470C00B8122F /* XCRemoteSwiftPackageReference "LBTATools" */ = {
+		1F31939A2377470C00B8122F /* RemoteSwiftPackageReference */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/bhlvoong/LBTATools";
 			requirement = {
@@ -497,14 +590,14 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		1F01CA8A23B00F6F00AEDF48 /* SwiftyJSON */ = {
+		1F01CA8A23B00F6F00AEDF48 /* SwiftPackageProductDependency */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 1F01CA8923B00F6F00AEDF48 /* XCRemoteSwiftPackageReference "SwiftyJSON" */;
+			package = 1F01CA8923B00F6F00AEDF48 /* RemoteSwiftPackageReference */;
 			productName = SwiftyJSON;
 		};
-		1F31939B2377470C00B8122F /* LBTATools */ = {
+		1F31939B2377470C00B8122F /* SwiftPackageProductDependency */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 1F31939A2377470C00B8122F /* XCRemoteSwiftPackageReference "LBTATools" */;
+			package = 1F31939A2377470C00B8122F /* RemoteSwiftPackageReference */;
 			productName = LBTATools;
 		};
 /* End XCSwiftPackageProductDependency section */
