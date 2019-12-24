@@ -13,8 +13,8 @@ class Seperator: UIView{
     override init(frame: CGRect) {
         super.init(frame: .zero)
         
-        backgroundColor = Document.grey.withAlphaComponent(0.2)
-        withHeight(1)
+        backgroundColor = Document.lightGrey
+        withHeight(2)
     }
     
     required init?(coder: NSCoder) {

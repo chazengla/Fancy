@@ -23,6 +23,8 @@ class EnterPhoneViewController: UIViewController {
     
     let phoneNumberTextField = CustomTextField(placeholder: "+44 7955789831", bolded: true)
     
+//    let phoneNumberTextField = UITextField(placeholder: "Something")
+    
     let nextButton: CustomButton = {
         let button = CustomButton(title: "Next")
         return button

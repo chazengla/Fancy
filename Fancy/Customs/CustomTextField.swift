@@ -10,17 +10,12 @@ import UIKit
 
 class CustomTextField: UIView{
     
-    let bottomLine: UIView = {
-        let view = UIView()
-        view.backgroundColor = Document.grey.withAlphaComponent(0.2)
-        view.withHeight(1)
-        return view
-    }()
+    let bottomLine = Seperator()
     
     let textField: UITextField = {
         let tf = UITextField()
         tf.textAlignment = .center
-        
+        tf.backgroundColor = .red
         return tf
     }()
     

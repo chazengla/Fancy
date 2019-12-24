@@ -29,19 +29,15 @@ class LandingPageViewController: UIViewController {
     
     let infoLabel: UILabel = {
         let label = UILabel()
-        label.text = "Get snacks delivered in 10 minutes or less"
+        label.text = "Get snacks delivered in 30 minutes or less"
         label.font = UIFont(name: Constants.futuraPrimary, size: 15)
         label.textColor = Document.black
         
         return label
     }()
     
-    lazy var seperatorView: UIView = {
-        let view = UIView()
-        view.backgroundColor = Document.grey.withAlphaComponent(0.2)
-        view.withHeight(1)
-        return view
-    }()
+    let seperatorView = Seperator()
+
     
     let phoneNumberButton: CustomButton = {
         let button = CustomButton(title: "Continue with phone number")

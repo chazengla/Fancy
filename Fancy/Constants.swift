@@ -10,9 +10,12 @@ import UIKit
 
 struct Document {
     static let hotPink = UIColor(netHex: 0xF49BEF)
-    static let mintGreen = UIColor(netHex: 0x3AF6B3)
+    static let mintGreen = UIColor(netHex: 0x20F1A7)
     static let black = UIColor(netHex: 0x000000)
     static let grey = UIColor(netHex: 0xC7C7C7)
+    static let lightGrey = UIColor(netHex: 0xF8F8F8)
+    static let errorRed = UIColor(netHex: 0xDF6E6E)
+    static let white = UIColor(netHex: 0xffffff)
 }
 
 
